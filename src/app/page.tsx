@@ -1,5 +1,5 @@
 import ElectricitySection from '@/components/ElectricitySection';
-import HeroSection from '@/components/HeroSection';
+import MainSection from '@/components/MainSection';
 import ValuesSection from '@/components/ValuesSection';
 import CasesSection from '@/components/CasesSection';
 import FaqSection from '@/components/FaqSection';
@@ -8,7 +8,7 @@ import ContactUsSection from '@/components/ContactUsSection';
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <MainSection />
       <ValuesSection />
       <ElectricitySection />
       <CasesSection />

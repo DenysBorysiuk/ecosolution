@@ -1,7 +1,18 @@
+import Logo from '@/components/ui/Logo';
+import Link from 'next/link';
+
 const Footer = () => {
   return (
-    <footer className="border-2 border-red-500">
-      <h2>footer</h2>
+    <footer className="sb">
+      <Logo />
+      <Link href="#main">Up</Link>
+      <ul>
+        <li>F</li>
+        <li>I</li>
+      </ul>
+      <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
+      <p>office@ecosolution.com</p>
+      <p>ecosolution © 2023</p>
     </footer>
   );
 };

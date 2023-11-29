@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +18,7 @@ body {
   font-family: var(--font-fira-sans);
   color: #173d33;
   font-weight: 400;
+  line-height: normal;
 }
 
 header,
@@ -20,16 +27,22 @@ section {
   @apply container  xl:max-w-screen-xl;
 }
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3 {
   font-family: var(--font-oswald);
   text-transform: uppercase;
   line-height: 1;
+}
+
+.section {
+  @apply mb-[36px] md:mb-[100px] xl:mb-[120px];
+}
+
+.heading2 {
+  @apply text-[28px] md:text-[36px] xl:text-[48px] smOnly:mb-[24px];
+}
+
+.sb {
+  @apply border-2 border-green-500;
 }

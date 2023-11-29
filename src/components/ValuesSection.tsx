@@ -2,8 +2,8 @@ import React from 'react';
 
 const ValuesSection = () => {
   return (
-    <section className="border-2 border-red-500">
-      <h2>Main values of our company</h2>
+    <section className="sb section ">
+      <h2 className="heading2">Main values of our company</h2>
       <p>
         EcoSolution envisions a world where sustainable energy solutions power a brighter and
         cleaner future for all. We aspire to be at the forefront of the global shift towards
