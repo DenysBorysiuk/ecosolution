@@ -1,5 +1,5 @@
 const CasesSection = () => {
-  return <section>CasesSection</section>;
+  return <section className="border-2 border-red-500">CasesSection</section>;
 };
 
 export default CasesSection;

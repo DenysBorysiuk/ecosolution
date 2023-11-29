@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: #f3f5fa;
+}
+
+header,
+footer,
+section {
+  @apply container  xl:max-w-screen-xl;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}

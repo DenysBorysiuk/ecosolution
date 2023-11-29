@@ -1,7 +1,17 @@
 import React from 'react';
 
 const ValuesSection = () => {
-  return <section>ValuesSection</section>;
+  return (
+    <section className="border-2 border-red-500">
+      <h2>Main values of our company</h2>
+      <p>
+        EcoSolution envisions a world where sustainable energy solutions power a brighter and
+        cleaner future for all. We aspire to be at the forefront of the global shift towards
+        renewable energy, leading the way in innovative technologies that harness the power of
+        nature to meet the world&#10076;s energy needs.
+      </p>
+    </section>
+  );
 };
 
 export default ValuesSection;
