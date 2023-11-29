@@ -14,7 +14,15 @@ const MainSection = () => {
             Development and implementation of renewable non-polluting energy sources, generating
             power generation using energy wind, sun, water, biomass
           </p>
-          <Link href="/">Learn more</Link>
+          <Link
+            href="#cases"
+            className="link-btn w-[141px] smOnly:mx-auto border border-[#97D28B] hover:border-[#173D33]"
+          >
+            Learn more
+            <div className="flex justify-center items-center rounded-full bg-[#97D28B] w-[32px] h-[32px]">
+              <Image src="/icons/arrow-right.svg" alt="arrow right" width={16} height={16} />
+            </div>
+          </Link>
         </div>
       </div>
       <span>--------------------</span>
