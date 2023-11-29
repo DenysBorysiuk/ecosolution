@@ -47,6 +47,9 @@ h3 {
   @apply text-[28px] md:text-[36px] xl:text-[48px] smOnly:mb-[24px];
 }
 
+.icon-md {
+  @apply flex justify-center items-center rounded-full bg-[#97D28B] w-[32px] h-[32px];
+}
 .link-btn {
   @apply flex justify-center items-center gap-[12px] h-[39px] rounded-full hover:bg-[#173D33] hover:text-[#97D28B];
 }
