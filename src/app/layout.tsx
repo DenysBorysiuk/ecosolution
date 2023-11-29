@@ -1,10 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Oswald, Fira_Sans } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-oswald',
+  display: 'swap',
+});
+
+const firaSans = Fira_Sans({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-fira-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${oswald.variable} ${firaSans.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />

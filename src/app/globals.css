@@ -9,6 +9,9 @@ html {
 body {
   position: relative;
   background-color: #f3f5fa;
+  font-family: var(--font-fira-sans);
+  color: #173d33;
+  font-weight: 400;
 }
 
 header,
@@ -16,8 +19,17 @@ footer,
 section {
   @apply container  xl:max-w-screen-xl;
 }
+
 *,
 :after,
 :before {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-oswald);
+  text-transform: uppercase;
+  line-height: 1;
 }
