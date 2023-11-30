@@ -5,13 +5,13 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className="sb">
-      <div className="flex items-center smOnly:justify-between mb-[24px]">
+      <div className="mb-[24px] flex items-center smOnly:justify-between">
         <Logo />
         <Link className="icon-md rotate-[-90deg]" href="#main">
           <Image src="/icons/arrow-right.svg" alt="arrow right" width={16} height={16} />
         </Link>
       </div>
-      <ul className="flex gap-[8px] justify-center mb-[24px]">
+      <ul className="mb-[24px] flex justify-center gap-[8px]">
         <li>
           <Link href="#">
             <Image src="/icons/facebook.svg" alt="facebook icon" width={24} height={24} />
@@ -23,8 +23,8 @@ const Footer = () => {
           </Link>
         </li>
       </ul>
-      <div className="flex smOnly:flex-col smOnly:gap-[16px] items-center mb-[24px] tracking-[-0.64px]">
-        <address className="md:mr-auto not-italic">
+      <div className="mb-[24px] flex items-center tracking-[-0.64px] smOnly:flex-col smOnly:gap-[16px]">
+        <address className="not-italic md:mr-auto">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </address>
         <Link href="mailto:office@ecosolution.com">office@ecosolution.com</Link>
