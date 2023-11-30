@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import heroBg from '../../public/images/hero/hero.jpg';
+import ResponsiveImage from './ui/ResponsiveImage';
 
 const MainSection = () => {
   return (
@@ -9,6 +9,7 @@ const MainSection = () => {
         <h1 className="md:w-[300px] xl:w-[485px] text-[36px] md:text-[48px] xl:text-[64px]">
           Renewable energy for any&nbsp;task
         </h1>
+
         <div className="flex flex-col gap-[24px] md:w-[342px]">
           <p className="md:w-[342px] xl:w-[363px] text-[16px] text-justify tracking-[-0.64px]">
             Development and implementation of renewable non-polluting energy sources, generating
@@ -19,15 +20,14 @@ const MainSection = () => {
             className="link-btn w-[141px] smOnly:mx-auto border border-[#97D28B] hover:border-[#173D33]"
           >
             Learn more
-            <div className="flex justify-center items-center rounded-full bg-[#97D28B] w-[32px] h-[32px]">
+            <div className="icon-md">
               <Image src="/icons/arrow-right.svg" alt="arrow right" width={16} height={16} />
             </div>
           </Link>
         </div>
       </div>
 
-      {/* <!-- divider --> */}
-      <div className="mb-[24px] border-b border-[#97D28B]" />
+      <hr className="mb-[24px] border-t border-[#97D28B]" />
 
       <div className="flex smOnly:flex-col smOnly:gap-[24px] items-center mb-[36px] tracking-[-0.64px]">
         <address className="md:mr-auto not-italic">
@@ -38,14 +38,7 @@ const MainSection = () => {
       </div>
 
       <div className="h-[200px] md:h-[348px] xl:h-[524px]">
-        <Image
-          src={heroBg}
-          alt="wind turbine"
-          style={{
-            width: '100%',
-            height: '100%',
-          }}
-        />
+        <ResponsiveImage />
       </div>
     </section>
   );
