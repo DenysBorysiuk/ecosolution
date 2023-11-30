@@ -17,17 +17,25 @@ const ValuesSection = () => {
 
       <ul className="grid grid-cols-2 grid-rows-2 gap-[24px] md:grid-cols-4 md:grid-rows-2 xl:gap-[48px]">
         <li className="card">
-          <h3>Openness</h3>
-          <p>to the world, people, new ideas and projects</p>
+          <h3 className="heading3">Openness</h3>
+          <p
+            className="border-t border-[#97D28B] pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
+                       xl:pt-[24px] xl:text-[16px] xl:tracking-[-0.64px]"
+          >
+            to the world, people, new ideas and projects
+          </p>
         </li>
         <li className="card">
-          <h3>Responsibility</h3>
-          <p>
+          <h3 className="heading3">Responsibility</h3>
+          <p
+            className="border-t border-[#97D28B] pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
+                       xl:pt-[24px] xl:text-[16px] xl:tracking-[-0.64px]"
+          >
             we are aware that the results of our work have an impact on our lives and the lives of
             future generations
           </p>
         </li>
-        <li className="md:col-span-2 smOnly:hidden">
+        <li className="md:col-span-2 md:h-[197px] smOnly:hidden">
           <Image
             src={values1}
             alt="wind-farms-fields"
@@ -36,12 +44,12 @@ const ValuesSection = () => {
             // priority
             style={{
               maxWidth: '100%',
-              height: 'auto',
+              height: '100%',
             }}
-            className="md:h-[197px] md:w-[342px] xl:h-[339px] xl:w-[596px]"
+            className=" md:w-[342px] xl:h-[339px] xl:w-[596px]"
           />
         </li>
-        <li className="md:col-span-2 md:row-start-2 smOnly:hidden">
+        <li className="md:col-span-2  md:row-start-2 md:h-[197px] smOnly:hidden">
           <Image
             src={values2}
             alt="man-worker-field-by-solar-panels"
@@ -50,18 +58,26 @@ const ValuesSection = () => {
             // priority
             style={{
               maxWidth: '100%',
-              height: 'auto',
+              height: '100%',
             }}
-            className=" md:h-[197px] md:w-[342px] xl:h-[339px] xl:w-[596px]"
+            className=" md:w-[342px] xl:h-[339px] xl:w-[596px]"
           />
         </li>
         <li className="card md:col-start-3 md:row-start-2">
-          <h3>Innovation</h3>
-          <p>we use the latest technology to implement non-standard solutions</p>
+          <h3 className="heading3">Innovation</h3>
+          <p
+            className="border-t border-[#97D28B] pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
+                       xl:pt-[24px] xl:text-[16px] xl:tracking-[-0.64px]"
+          >
+            we use the latest technology to implement non-standard solutions
+          </p>
         </li>
         <li className="card md:col-start-4 md:row-start-2">
-          <h3>Quality</h3>
-          <p>
+          <h3 className="heading3">Quality</h3>
+          <p
+            className="border-t border-[#97D28B] pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
+                       xl:pt-[24px] xl:text-[16px] xl:tracking-[-0.64px]"
+          >
             we do not strive to be the first among others, but we want to be the best in our
             business
           </p>

@@ -10,11 +10,11 @@
 *,
 :after,
 :before {
-  box-sizing: border-box;
+  @apply box-border;
 }
 
 html {
-  scroll-behavior: smooth;
+  @apply scroll-smooth;
 }
 
 body {
@@ -48,6 +48,10 @@ h3 {
   @apply text-[28px] md:text-[36px] xl:text-[48px] smOnly:mb-[24px];
 }
 
+.heading3 {
+  @apply mb-[24px] text-[16px]  md:mb-[51px]  md:text-[18px] xl:mb-[94px] xl:text-[32px];
+}
+
 .icon-md {
   @apply flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#97D28B];
 }
@@ -60,5 +64,5 @@ h3 {
 }
 
 .card {
-  @apply w-[148px] bg-[#EAEDF1] px-[12px] pt-[12px];
+  @apply h-[197px] w-[148px] bg-[#EAEDF1] px-[12px] pt-[12px] md:w-[159px] xl:h-[339px] xl:w-[274px];
 }
