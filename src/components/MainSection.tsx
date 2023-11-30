@@ -38,8 +38,17 @@ const MainSection = () => {
       </div>
 
       <div className="h-[200px] md:h-[348px] xl:h-[524px]">
-        <ResponsiveImage />
+        <ResponsiveImage name={'main'} alt={'wind turbine'} sm={true} />
       </div>
+      {/* <Image
+        src={image.src}
+        alt={image.alt}
+        width={572}
+        height={578}
+        priority
+        sizes="(max-width: 767px) 440px, (max-width: 1279px) 334px, 578px"
+        className="aspect-square object-cover object-center md:aspect-[1/1.01]"
+      /> */}
     </section>
   );
 };

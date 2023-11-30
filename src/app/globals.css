@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* draft */
+.sb {
+  @apply border-2 border-green-500;
+}
+
 *,
 :after,
 :before {
@@ -27,20 +32,16 @@ section {
   @apply container  xl:max-w-screen-xl;
 }
 
+.section {
+  @apply mb-[36px] md:mb-[100px] xl:mb-[120px];
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--font-oswald);
   text-transform: uppercase;
   line-height: 1;
-}
-
-.sb {
-  @apply border-2 border-green-500;
-}
-
-.section {
-  @apply mb-[36px] md:mb-[100px] xl:mb-[120px];
 }
 
 .heading2 {
@@ -56,4 +57,8 @@ h3 {
 
 .btn-transition {
   @apply transition duration-300 ease-in-out;
+}
+
+.card {
+  @apply w-[148px] bg-[#EAEDF1] px-[12px] pt-[12px];
 }
