@@ -27,9 +27,9 @@ const MainSection = () => {
         </div>
       </div>
 
-      <hr className="mb-[24px] border-t border-[#97D28B]" />
+      <div className="bg-accent mb-[24px] h-[1px] w-full" />
 
-      <div className="mb-[36px] flex items-center tracking-[-0.64px] smOnly:flex-col smOnly:gap-[24px]">
+      <div className="mb-[36px] flex items-center tracking-[-0.64px] smOnly:flex-col smOnly:gap-[8px]">
         <address className="not-italic md:mr-auto">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </address>
