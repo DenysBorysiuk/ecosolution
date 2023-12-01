@@ -1,5 +1,5 @@
-import Logo from '@/components/ui/Logo';
-import BurgerMenu from '@/components/BurgerMenu';
+import Logo from '@/components/ui/Logo/Logo';
+import BurgerMenu from '@/components/ui/BurgerMenu/BurgerMenu';
 import Image from 'next/image';
 import Link from 'next/link';
 

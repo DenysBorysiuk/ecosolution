@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ResponsiveImage from './ui/ResponsiveImage';
+import MainImage from '../ui/MainImage/MainImage';
 
 const MainSection = () => {
   return (
@@ -38,7 +38,7 @@ const MainSection = () => {
       </div>
 
       <div className="h-[200px] md:h-[348px] xl:h-[524px]">
-        <ResponsiveImage name={'main'} alt={'wind turbine'} sm={true} />
+        <MainImage name={'main'} alt={'wind turbine'} sm={true} />
       </div>
       {/* <Image
         src={image.src}

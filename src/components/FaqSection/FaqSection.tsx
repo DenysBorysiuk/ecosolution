@@ -1,4 +1,4 @@
-import Accordion from './ui/Accordion';
+import Accordion from '../ui/Accordion/Accordion';
 import data from '@/data/accordion.json';
 
 const FaqSection = () => {

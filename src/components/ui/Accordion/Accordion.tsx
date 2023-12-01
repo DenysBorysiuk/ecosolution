@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import AccordionIcon from './AccordionIcon';
+import AccordionIcon from '../AccordionIcon/AccordionIcon';
 
 type AccordionProps = {
   children: React.ReactNode;
