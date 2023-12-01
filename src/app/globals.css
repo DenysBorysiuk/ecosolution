@@ -18,12 +18,7 @@ html {
 }
 
 body {
-  position: relative;
-  background-color: #f3f5fa;
-  font-family: var(--font-fira-sans);
-  color: #173d33;
-  font-weight: 400;
-  line-height: normal;
+  @apply font-fira_sans bg-body text-primary  relative font-normal leading-normal;
 }
 
 header,
@@ -39,13 +34,11 @@ section {
 h1,
 h2,
 h3 {
-  font-family: var(--font-oswald);
-  text-transform: uppercase;
-  line-height: 1;
+  @apply font-oswald uppercase leading-none;
 }
 
 .heading2 {
-  @apply text-[28px] md:text-[36px] xl:text-[48px] smOnly:mb-[24px];
+  @apply text-[28px] md:text-[36px] xl:text-[48px];
 }
 
 .heading3 {

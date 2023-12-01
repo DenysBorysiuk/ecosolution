@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import values1 from '../../public/images/values/values-1_lg@2.webp';
-import values2 from '../../public/images/values/values-2_lg@2.webp';
+import values1 from '../../../public/images/values/values-1_lg@2.webp';
+import values2 from '../../../public/images/values/values-2_lg@2.webp';
 
 const ValuesSection = () => {
   return (
     <section className="section">
       <div className="mb-[36px] md:mb-[100px] md:flex xl:mb-[122px] ">
-        <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px]">
+        <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px] smOnly:mb-[24px]">
           Main values of our company
         </h2>
         <p className="text-justify text-[16px] tracking-[-0.64px] md:w-[342px] xl:w-[459px]">
@@ -21,7 +21,7 @@ const ValuesSection = () => {
         <li className="card">
           <h3 className="heading3">Openness</h3>
           <p
-            className="border-t border-[#97D28B] pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
+            className="border-accent border-t pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
                        xl:pt-[24px] xl:text-[16px] xl:tracking-[-0.64px]"
           >
             to the world, people, new ideas and projects
@@ -30,7 +30,7 @@ const ValuesSection = () => {
         <li className="card">
           <h3 className="heading3">Responsibility</h3>
           <p
-            className="border-t border-[#97D28B] pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
+            className="border-accent border-t pt-[12px] text-justify text-[14px] tracking-[-0.56px] 
                        xl:pt-[24px] xl:text-[16px] xl:tracking-[-0.64px]"
           >
             we are aware that the results of our work have an impact on our lives and the lives of

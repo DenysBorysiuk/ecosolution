@@ -13,6 +13,7 @@ const config: Config = {
       xl: '1280px',
 
       smOnly: { max: '767.98px' },
+      mdOnly: { min: '768px', max: '1279.98px' },
     },
 
     container: {
@@ -23,7 +24,20 @@ const config: Config = {
         xl: '20px',
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        oswald: ['var(--font-oswald)'],
+        fira_sans: ['var(--font-fira-sans)'],
+      },
+
+      colors: {
+        body: '#f3f5fa',
+        primary: '#173d33',
+        secondary: '#BDBDBD',
+        accent: '#97D28B',
+        bg_secondary: '#EAEDF1',
+      },
+    },
   },
   plugins: [],
 };
