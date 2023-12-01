@@ -5,9 +5,11 @@ import values2 from '../../public/images/values/values-2_lg@2.webp';
 const ValuesSection = () => {
   return (
     <section className="section">
-      <div className="mb-[36px] md:flex">
-        <h2 className="heading2">Main values of our company</h2>
-        <p className="text-justify text-[16px] tracking-[-0.64px] md:w-[342px] xl:w-[363px]">
+      <div className="mb-[36px] md:mb-[100px] md:flex xl:mb-[122px] ">
+        <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px]">
+          Main values of our company
+        </h2>
+        <p className="text-justify text-[16px] tracking-[-0.64px] md:w-[342px] xl:w-[459px]">
           EcoSolution envisions a world where sustainable energy solutions power a brighter and
           cleaner future for all. We aspire to be at the forefront of the global shift towards
           renewable energy, leading the way in innovative technologies that harness the power of
@@ -15,7 +17,7 @@ const ValuesSection = () => {
         </p>
       </div>
 
-      <ul className="grid grid-cols-2 grid-rows-2 gap-[24px] md:grid-cols-4 md:grid-rows-2 xl:gap-[48px]">
+      <ul className="grid grid-cols-2 grid-rows-2 gap-[24px] md:grid-cols-4 md:grid-rows-2 xl:gap-[48px] smOnly:mx-auto smOnly:w-[320px]">
         <li className="card">
           <h3 className="heading3">Openness</h3>
           <p
@@ -35,7 +37,7 @@ const ValuesSection = () => {
             future generations
           </p>
         </li>
-        <li className="md:col-span-2 md:h-[197px] smOnly:hidden">
+        <li className="md:col-span-2 md:h-[197px] xl:h-[339px]  smOnly:hidden">
           <Image
             src={values1}
             alt="wind-farms-fields"
@@ -46,10 +48,10 @@ const ValuesSection = () => {
               maxWidth: '100%',
               height: '100%',
             }}
-            className=" md:w-[342px] xl:h-[339px] xl:w-[596px]"
+            className=" md:w-[342px] xl:w-[596px]"
           />
         </li>
-        <li className="md:col-span-2  md:row-start-2 md:h-[197px] smOnly:hidden">
+        <li className="md:col-span-2  md:row-start-2 md:h-[197px] xl:h-[339px]  smOnly:hidden">
           <Image
             src={values2}
             alt="man-worker-field-by-solar-panels"
