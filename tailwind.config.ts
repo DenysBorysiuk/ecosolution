@@ -35,7 +35,7 @@ const config: Config = {
         primary: '#173d33',
         secondary: '#BDBDBD',
         accent: '#97D28B',
-        bg_secondary: '#EAEDF1',
+        form_bg: '#EAEDF1',
       },
     },
   },
