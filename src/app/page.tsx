@@ -4,6 +4,7 @@ import ValuesSection from '@/components/ValuesSection';
 import CasesSection from '@/components/CasesSection';
 import FaqSection from '@/components/FaqSection';
 import ContactUsSection from '@/components/ContactUsSection';
+import BurgerMenu from '@/components/ui/BurgerMenu';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CasesSection />
       <FaqSection />
       <ContactUsSection />
+      <BurgerMenu />
     </>
   );
 }

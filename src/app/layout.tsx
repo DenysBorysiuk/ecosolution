@@ -23,13 +23,18 @@ export const metadata: Metadata = {
   description: 'Renewable energy for any task',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className={`${oswald.variable} ${firaSans.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />
+        <div id="modal-root" />
       </body>
     </html>
   );
