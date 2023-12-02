@@ -9,7 +9,8 @@ const Navigation = () => {
           <li key={link.key}>
             <Link
               href={link.href}
-              className="text-[24px] leading-[1.2] tracking-[-0.72px] text-white/25 hover:text-white"
+              className="text-[24px] leading-[1.2] tracking-[-0.72px]
+               text-white active:text-accent xl:text-white/25 xl:hover:text-white"
             >
               {link.title}
             </Link>

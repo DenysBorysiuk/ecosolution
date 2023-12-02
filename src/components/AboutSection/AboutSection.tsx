@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-const ValuesSection = () => {
+const AboutSection = () => {
   return (
-    <section className="section">
+    <section className="section" id="about">
       <div className="mb-[36px] md:mb-[100px] md:flex xl:mb-[122px] ">
         <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px] smOnly:mb-[24px]">
           Main values of our company
@@ -68,4 +68,4 @@ const ValuesSection = () => {
   );
 };
 
-export default ValuesSection;
+export default AboutSection;

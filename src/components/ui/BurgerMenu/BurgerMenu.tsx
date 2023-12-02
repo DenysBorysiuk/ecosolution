@@ -37,8 +37,8 @@ const BurgerMenu = () => {
       {/* menu */}
       {isOpen && (
         <div
-          className="fixed left-0 top-0 z-20 h-[100vh] w-[100vw] bg-primary/25 
-          px-[20px] pt-[36px]"
+          className="fixed left-0 top-0 z-20 h-[100vh] w-[100vw] 
+          bg-primary/25 px-[20px] pt-[36px]"
         >
           <div className=" h-[701px] rounded-[25px] bg-primary/75 p-[24px]">
             <button
