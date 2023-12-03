@@ -4,7 +4,7 @@
 
 /* draft */
 .sb {
-  @apply border-2 border-green-500;
+  @apply border-2 border-red-600;
 }
 
 *,
@@ -63,5 +63,5 @@ h3 {
 
 .line::before {
   content: '';
-  @apply absolute left-1/2 top-0 h-full w-[1px]  bg-accent;
+  @apply absolute left-1/2 top-0 h-full w-[1px] bg-accent  smOnly:hidden;
 }
