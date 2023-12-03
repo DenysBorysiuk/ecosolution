@@ -3,11 +3,12 @@ import Image from 'next/image';
 const AboutSection = () => {
   return (
     <section className="section" id="about">
-      <div className="mb-[36px] md:mb-[100px] md:flex xl:mb-[122px] ">
+      <div className=" line relative mb-[36px] md:mb-[100px] md:flex xl:mb-[122px] ">
         <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px] smOnly:mb-[24px]">
           Main values of our company
         </h2>
-        <p className="text-justify text-[16px] tracking-[-0.64px] md:w-[342px] xl:w-[459px]">
+        <div className="hidden" />
+        <p className="text-justify text-[16px] md:w-[342px] xl:w-[459px]">
           EcoSolution envisions a world where sustainable energy solutions power
           a brighter and cleaner future for all. We aspire to be at the
           forefront of the global shift towards renewable energy, leading the

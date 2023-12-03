@@ -1,6 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import MainImage from '../ui/MainImage/MainImage';
+'use client';
+
+import MainImage from '@/components/ui/MainImage/MainImage';
+import Arrow from 'public/icons/arrow-md.svg';
+import { smoothScroll } from '@/utils/smoothScroll';
+import Address from '@/components/ui/Address';
 
 const MainSection = () => {
   return (
@@ -19,34 +22,22 @@ const MainSection = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
-          <Link
-            href="#cases"
-            className="link-btn w-[141px] border border-[#97D28B] hover:border-[#173D33] smOnly:mx-auto"
+          <button
+            className="link-btn anim w-[141px] border 
+          border-accent hover:border-primary smOnly:mx-auto"
+            onClick={e => smoothScroll(e, 'cases')}
           >
             Learn more
-            <div className="icon-md">
-              <Image
-                src="/icons/arrow-right.svg"
-                alt="arrow right"
-                width={16}
-                height={16}
-              />
-            </div>
-          </Link>
+            <span className="icon h-[32px] w-[32px] bg-accent">
+              <Arrow />
+            </span>
+          </button>
         </div>
       </div>
 
       <div className="mb-[24px] h-[1px] w-full bg-accent" />
 
-      <div className="mb-[36px] flex items-center tracking-[-0.64px] smOnly:flex-col smOnly:gap-[8px]">
-        <address className="not-italic md:mr-auto">
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-        </address>
-        <Link href="mailto:office@ecosolution.com">office@ecosolution.com</Link>
-        <p className="hidden md:ml-[50px] md:flex xl:ml-[167px]">
-          ecosolution &copy; 2023
-        </p>
-      </div>
+      <Address />
 
       <div className="h-[200px] md:h-[348px] xl:h-[524px]">
         <MainImage name={'main'} alt={'wind turbine'} sm={true} />

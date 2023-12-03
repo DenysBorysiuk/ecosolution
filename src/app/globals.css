@@ -45,8 +45,8 @@ h3 {
   @apply mb-[24px] text-[16px]  md:mb-[51px]  md:text-[18px] xl:mb-[94px] xl:text-[32px];
 }
 
-.icon-md {
-  @apply flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#97D28B];
+.icon {
+  @apply flex items-center justify-center rounded-full;
 }
 
 .link-btn {
@@ -59,4 +59,9 @@ h3 {
 
 .card {
   @apply h-[197px] w-[148px] bg-[#EAEDF1] px-[12px] pt-[12px] md:w-[159px] xl:h-[339px] xl:w-[274px];
+}
+
+.line::before {
+  content: '';
+  @apply absolute left-1/2 top-0 h-full w-[1px]  bg-accent;
 }
