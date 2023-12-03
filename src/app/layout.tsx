@@ -13,7 +13,7 @@ const oswald = Oswald({
 
 const firaSans = Fira_Sans({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['300', '400'],
   variable: '--font-fira-sans',
   display: 'swap',
 });
