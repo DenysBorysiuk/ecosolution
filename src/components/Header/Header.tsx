@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useEffect, useState, MouseEvent } from 'react';
+import { smoothScroll } from '@/utils/smoothScroll';
 import Logo from '@/components/ui/Logo';
-import BurgerMenu from '../ui/BurgerMenu';
+import BurgerMenu from '@/components/ui/BurgerMenu';
+import ArrowIcon from 'public/icons/arrow-sm.svg';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,25 +26,21 @@ const Header = () => {
     <header
       className={`${
         isScrolled ? 'bg-white' : 'bg-transparent'
-      } fixed left-0 right-0 top-0 z-10 flex h-[112px] items-center xl:py-[24px] `}
+      } fixed left-0 right-0 top-0 z-10 flex h-[112px] items-center`}
       id="header"
     >
       <Logo />
-
       <BurgerMenu />
 
-      <Link
-        href="#contacts"
-        className="link-btn w-[141px] rounded-full bg-accent smOnly:hidden"
+      <button
+        className="link-btn anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
+        onClick={e => smoothScroll(e, 'contacts')}
       >
         Get in touch
-        <Image
-          src="/icons/arrow-down.svg"
-          alt="arrow icon"
-          width={14}
-          height={14}
-        />
-      </Link>
+        <span className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent">
+          <ArrowIcon />
+        </span>
+      </button>
     </header>
   );
 };

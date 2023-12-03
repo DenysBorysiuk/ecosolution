@@ -1,3 +1,5 @@
+import SocialIcons from '@/components/ui/SocialIcons';
+
 const Contacts = () => {
   return (
     <ul className="flex flex-col gap-[24px] md:w-[244px] xl:w-[466px] xl:gap-[32px] smOnly:mb-[24px]">
@@ -24,7 +26,7 @@ const Contacts = () => {
       </li>
       <li>
         <p className="text-[16px] tracking-[-0.64px]">Social Networks:</p>
-        <p>icons</p>
+        <SocialIcons color={'primary'} className={'gap-[8px]'} />
       </li>
     </ul>
   );

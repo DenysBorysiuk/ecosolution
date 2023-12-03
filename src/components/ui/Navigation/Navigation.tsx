@@ -1,25 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, MouseEvent } from 'react';
 import { NAV_LINKS } from '@/constants';
 import { smoothScroll } from '@/utils/smoothScroll';
 
 type NavigationProps = {
-  onClick: () => void;
+  onClose: () => void;
+  currentLink: string;
+  setCurrentLink: (link: string) => void;
 };
 
-const Navigation = ({ onClick }: NavigationProps) => {
-  const [currentLink, setCurrentLink] = useState('');
-
-  const onLinkClick = (e: React.MouseEvent, link: string) => {
-    onClick();
+const Navigation = ({
+  onClose,
+  currentLink,
+  setCurrentLink,
+}: NavigationProps) => {
+  const onLinkClick = (e: MouseEvent, link: string) => {
+    onClose();
     setCurrentLink(link);
     smoothScroll(e, link);
   };
 
   return (
     <nav>
-      <ul className="flex flex-col gap-[8px]">
+      <ul className="mb-auto flex flex-col gap-[8px]">
         {NAV_LINKS.map(link => (
           <li key={link.key}>
             <a
@@ -31,8 +35,8 @@ const Navigation = ({ onClick }: NavigationProps) => {
                   ? 'text-accent'
                   : 'text-white xl:text-white/25'
               }
-              text-[24px] tracking-[-0.96px] 
-               xl:hover:text-white`}
+              anim text-[24px] 
+               tracking-[-0.96px] xl:hover:text-white`}
             >
               {link.title}
             </a>

@@ -4,9 +4,11 @@ import { useEffect, useState, MouseEvent } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Menu from 'public/icons/menu.svg';
 import Close from 'public/icons/close.svg';
+import SocialIcons from '@/components/ui/SocialIcons';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentLink, setCurrentLink] = useState('main');
 
   useEffect(() => {
     if (isOpen) {
@@ -39,9 +41,10 @@ const BurgerMenu = () => {
   return (
     <div className="ml-auto">
       <button
-        className="flex h-[40px] w-[40px] items-center justify-center rounded-full 
-        bg-[#DCEFD8]  hover:bg-accent"
+        className="anim flex h-[40px] w-[40px] items-center justify-center 
+        rounded-full  bg-[#DCEFD8] hover:bg-accent"
         onClick={() => setIsOpen(true)}
+        aria-label="Menu"
       >
         <Menu width={16} height={16} />
       </button>
@@ -54,19 +57,29 @@ const BurgerMenu = () => {
           onClick={onBackdropClick}
         >
           <div
-            className=" h-[701px] rounded-[25px] bg-primary/75 p-[24px] md:ml-auto
-            md:w-[320px] xl:h-[873px]  xl:w-[365px] smOnly:mx-auto smOnly:max-w-[440px]"
+            className=" flex h-[701px] flex-col justify-between rounded-[25px]
+            bg-primary/75 p-[24px]  md:ml-auto md:w-[320px] xl:h-[873px]
+            xl:w-[365px] smOnly:mx-auto smOnly:max-w-[440px]"
           >
-            <button
-              className="mb-[8px] flex items-center justify-center text-[20px] text-white xl:text-[16px]"
-              type="button"
-              onClick={() => setIsOpen(false)}
-            >
-              <Close />
-              close
-            </button>
-            <div className="mb-[24px] h-[1px] w-full bg-white" />
-            <Navigation onClick={() => setIsOpen(false)} />
+            <div>
+              <button
+                className="anim mb-[8px] flex items-center justify-center text-[20px]
+              text-white hover:text-accent xl:text-[16px]"
+                type="button"
+                onClick={() => setIsOpen(false)}
+              >
+                <Close />
+                close
+              </button>
+              <div className="mb-[24px] h-[1px] w-full bg-white" />
+
+              <Navigation
+                onClose={() => setIsOpen(false)}
+                currentLink={currentLink}
+                setCurrentLink={setCurrentLink}
+              />
+            </div>
+            <SocialIcons color={'white'} className={'gap-[8px]'} />
           </div>
         </div>
       )}

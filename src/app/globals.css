@@ -48,11 +48,12 @@ h3 {
 .icon-md {
   @apply flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#97D28B];
 }
+
 .link-btn {
   @apply flex h-[39px] items-center justify-center gap-[12px] rounded-full hover:bg-[#173D33] hover:text-[#97D28B];
 }
 
-.btn-transition {
+.anim {
   @apply transition duration-300 ease-in-out;
 }
 
