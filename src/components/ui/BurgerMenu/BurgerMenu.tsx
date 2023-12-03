@@ -7,8 +7,6 @@ import Close from 'public/icons/close.svg';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLink, setCurrentLink] = useState('');
-  // console.log(link);
 
   useEffect(() => {
     if (isOpen) {
@@ -36,11 +34,6 @@ const BurgerMenu = () => {
     if (event.currentTarget === event.target) {
       setIsOpen(false);
     }
-  };
-
-  const onLinkClick = (link: string) => {
-    setIsOpen(false);
-    setCurrentLink(link);
   };
 
   return (
@@ -73,7 +66,7 @@ const BurgerMenu = () => {
               close
             </button>
             <div className="mb-[24px] h-[1px] w-full bg-white" />
-            <Navigation onLinkClick={onLinkClick} currentLink={currentLink} />
+            <Navigation onClick={() => setIsOpen(false)} />
           </div>
         </div>
       )}

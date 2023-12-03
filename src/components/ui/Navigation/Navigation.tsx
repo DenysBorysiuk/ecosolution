@@ -1,16 +1,19 @@
 'use client';
 
+import { useState } from 'react';
 import { NAV_LINKS } from '@/constants';
 import { smoothScroll } from '@/utils/smoothScroll';
 
 type NavigationProps = {
-  onLinkClick: (currentLink: string) => void;
-  currentLink: string;
+  onClick: () => void;
 };
 
-const Navigation = ({ onLinkClick, currentLink }: NavigationProps) => {
-  const onClick = (e: React.MouseEvent, link: string) => {
-    onLinkClick(link);
+const Navigation = ({ onClick }: NavigationProps) => {
+  const [currentLink, setCurrentLink] = useState('');
+
+  const onLinkClick = (e: React.MouseEvent, link: string) => {
+    onClick();
+    setCurrentLink(link);
     smoothScroll(e, link);
   };
 
@@ -20,7 +23,7 @@ const Navigation = ({ onLinkClick, currentLink }: NavigationProps) => {
         {NAV_LINKS.map(link => (
           <li key={link.key}>
             <a
-              onClick={e => onClick(e, link.key)}
+              onClick={e => onLinkClick(e, link.key)}
               href={link.href}
               className={`
               ${
