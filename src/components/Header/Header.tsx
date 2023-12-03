@@ -26,7 +26,8 @@ const Header = () => {
     <header
       className={`${
         isScrolled ? 'bg-white' : 'bg-transparent'
-      } fixed left-0 right-0 top-0 z-10 flex gap-[12px] py-[36px] xl:py-[24px] `}
+      } fixed left-0 right-0 top-0 z-10 flex h-[112px] items-center xl:py-[24px] `}
+      id="header"
     >
       <Logo />
 

@@ -1,55 +1,79 @@
 'use client';
 
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, MouseEvent } from 'react';
 import Navigation from '@/components/ui/Navigation';
+import Menu from 'public/icons/menu.svg';
+import Close from 'public/icons/close.svg';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentLink, setCurrentLink] = useState('');
+  // console.log(link);
 
-  //  useEffect(() => {
-  //    const handleKeyDown = event => {
-  //      if (event.code === 'Escape') {
-  //        onClose();
-  //      }
-  //    };
-  //    window.addEventListener('keydown', handleKeyDown);
-  //    return () => {
-  //      window.removeEventListener('keydown', handleKeyDown);
-  //    };
-  //  }, [onClose]);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
 
-  //  const handleBackdropClick = e => {
-  //    if (e.currentTarget === e.target) {
-  //      onClose();
-  //    }
-  // };
+    return () => {};
+  }, [isOpen]);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.code === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, []);
+
+  const onBackdropClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (event.currentTarget === event.target) {
+      setIsOpen(false);
+    }
+  };
+
+  const onLinkClick = (link: string) => {
+    setIsOpen(false);
+    setCurrentLink(link);
+  };
 
   return (
-    <div className="ml-auto ">
+    <div className="ml-auto">
       <button
-        className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DCEFD8]  hover:bg-accent"
+        className="flex h-[40px] w-[40px] items-center justify-center rounded-full 
+        bg-[#DCEFD8]  hover:bg-accent"
         onClick={() => setIsOpen(true)}
       >
-        <Image src="/icons/menu.svg" alt="menu-button" width={16} height={16} />
+        <Menu width={16} height={16} />
       </button>
 
       {/* menu */}
       {isOpen && (
         <div
-          className="fixed left-0 top-0 z-20 h-[100vh] w-[100vw] 
-          bg-primary/25 px-[20px] pt-[36px]"
+          className="fixed left-0 top-0 z-20 h-[100vh] w-[100vw]  bg-primary/25 px-[20px]
+           pt-[36px] md:px-[30px] md:pt-[42px] xl:px-[100px] xl:pt-[30px]"
+          onClick={onBackdropClick}
         >
-          <div className=" h-[701px] rounded-[25px] bg-primary/75 p-[24px]">
+          <div
+            className=" h-[701px] rounded-[25px] bg-primary/75 p-[24px] md:ml-auto
+            md:w-[320px] xl:h-[873px]  xl:w-[365px] smOnly:mx-auto smOnly:max-w-[440px]"
+          >
             <button
-              className="text-[20px] text-white"
+              className="mb-[8px] flex items-center justify-center text-[20px] text-white xl:text-[16px]"
               type="button"
               onClick={() => setIsOpen(false)}
             >
+              <Close />
               close
             </button>
             <div className="mb-[24px] h-[1px] w-full bg-white" />
-            <Navigation />
+            <Navigation onLinkClick={onLinkClick} currentLink={currentLink} />
           </div>
         </div>
       )}
