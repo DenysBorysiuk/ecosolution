@@ -7,7 +7,7 @@ import data from '@/data/accordion.json';
 
 const FaqSection = () => {
   return (
-    <section className="sb section" id="faq">
+    <section className="section" id="faq">
       <div className="flex flex-col flex-wrap md:h-[740px] md:gap-[24px] xl:gap-[185px]">
         <h2 className="heading2  mb-auto md:w-[342px]">
           Frequently asked <br /> questions

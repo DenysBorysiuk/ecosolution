@@ -37,7 +37,9 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
           </p>
           <a
             href="#"
-            className="anim icon block h-[60px] w-[60px] bg-accent hover:bg-primary hover:text-accent"
+            aria-label={`Read more about ${title}`}
+            className="anim icon block h-[60px] w-[60px] bg-accent hover:bg-primary
+             hover:text-accent"
           >
             <Arrow />
           </a>
