@@ -1,18 +1,18 @@
 type ImageProps = {
   name: string;
   alt: string;
-  sm: boolean;
+  folder: string;
 };
 
-const ResponsiveImage = ({ name, alt, sm }: ImageProps) => {
+const ResponsiveImage = ({ name, folder, alt }: ImageProps) => {
   return (
     <picture>
       {/* <!-- desktop screen --> */}
       <source
         media="(min-width: 1280px)"
         srcSet={`
-                /images/${name}/${name}_lg@1x.webp 1x,
-                /images/${name}/${name}_lg@2x.webp 2x
+                /images/${folder}/${name}_lg@1x.webp 1x,
+                /images/${folder}/${name}_lg@2x.webp 2x
                 `}
         type="image/webp"
       />
@@ -21,28 +21,27 @@ const ResponsiveImage = ({ name, alt, sm }: ImageProps) => {
       <source
         media="(min-width: 420px)"
         srcSet={`
-                /images/${name}/${name}_md@1x.webp 1x,
-                /images/${name}/${name}_md@2x.webp 2x
+                /images/${folder}/${name}_md@1x.webp 1x,
+                /images/${folder}/${name}_md@2x.webp 2x
                 `}
         type="image/webp"
       />
 
       {/* <!-- mobile screen --> */}
-      {sm && (
-        <source
-          media="(max-width: 419px)"
-          srcSet={`
-                /images/${name}/${name}_sm@1x.webp 1x,
-                /images/${name}/${name}_sm@2x.webp 2x
+
+      <source
+        media="(max-width: 419px)"
+        srcSet={`
+                /images/${folder}/${name}_sm@1x.webp 1x,
+                /images/${folder}/${name}_sm@2x.webp 2x
   `}
-          type="image/webp"
-        />
-      )}
+        type="image/webp"
+      />
 
       {/* <!-- fallback --> */}
       <img
         className="h-full w-full object-cover"
-        src={`/images/${name}/${name}_md@1x.webp`}
+        src={`/images/${folder}/${name}_md@1x.webp`}
         alt={alt}
       />
     </picture>

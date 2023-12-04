@@ -11,7 +11,21 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
   return (
     <div className="h-[318px] md:h-[322px] md:w-[342px] xl:h-[506px] xl:w-[596px] ">
       <div className="h-[168px]  xl:h-[296px]">
-        <img src={img} alt={text} className="block h-[100%] w-full" />
+        <picture>
+          <source
+            srcSet={`
+                /images/cases/${img}_lg@1x.webp 1x,
+                /images/cases/${img}_lg@2x.webp 2x
+  `}
+            type="image/webp"
+          />
+          <img
+            className="h-full w-full object-cover"
+            src={`/images/cases}/${img}_lg@1x.webp`}
+            alt={text}
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div className="bg-form_bg px-[12px] pb-[12px] pt-[24px] xl:px-[48px] xl:py-[36px]">
         <div className="mb-[24px] flex justify-between md:mb-[22px] xl:mb-[36px]">

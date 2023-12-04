@@ -1,6 +1,6 @@
 'use client';
 
-import MainImage from '@/components/ui/MainImage/MainImage';
+import ResponsiveImage from '@/components/ui/ResponsiveImage';
 import Arrow from 'public/icons/arrow-md.svg';
 import { smoothScroll } from '@/utils/smoothScroll';
 import Address from '@/components/ui/Address';
@@ -40,7 +40,7 @@ const MainSection = () => {
       <Address className="hidden" />
 
       <div className="h-[200px] md:h-[348px] xl:h-[524px]">
-        <MainImage name={'main'} alt={'wind turbine'} sm={true} />
+        <ResponsiveImage name={'main'} folder={'main'} alt={'wind turbine'} />
       </div>
     </section>
   );
