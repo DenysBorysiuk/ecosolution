@@ -30,6 +30,7 @@ const CasesSection = () => {
               className="button-prev icon anim h-[66px] w-[66px] border border-primary
               hover:border-accent hover:text-accent"
               type="button"
+              arial-label="to show previous slide"
             >
               <Arrow />
             </button>
@@ -37,6 +38,7 @@ const CasesSection = () => {
               className="button-next icon anim h-[66px] w-[66px] rotate-180 border
                border-primary hover:border-accent hover:text-accent"
               type="button"
+              arial-label="to show next slide"
             >
               <Arrow />
             </button>
