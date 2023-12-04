@@ -13,7 +13,7 @@ const Footer = () => {
           className="anim icon h-[32px] w-[32px] rotate-[-90deg] bg-accent hover:bg-primary 
           hover:text-accent md:order-3"
           href="#main"
-          arial-label="scroll to main section"
+          arial-label="link to top of page"
         >
           <Arrow />
         </a>

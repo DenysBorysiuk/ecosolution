@@ -35,7 +35,6 @@ const Header = () => {
       <button
         className="link-btn anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
         onClick={e => smoothScroll(e, 'contacts')}
-        aria-label="scroll to Contact US section"
       >
         Get in touch
         <span className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent">
