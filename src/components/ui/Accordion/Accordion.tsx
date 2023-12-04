@@ -1,27 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import AccordionIcon from '../AccordionIcon/AccordionIcon';
 
 type AccordionProps = {
   children: React.ReactNode;
   question: string;
   id: string;
-  active?: boolean;
+  accordionOpen: boolean;
+  setCurrent: Dispatch<SetStateAction<number>>;
+  index: number;
 };
 
 export default function Accordion({
   children,
   question,
   id,
-  active = false,
+  accordionOpen,
+  setCurrent,
+  index,
 }: AccordionProps) {
-  const [accordionOpen, setAccordionOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    setAccordionOpen(active);
-  }, []);
-
   return (
     <div className="">
       <p>
@@ -30,7 +28,7 @@ export default function Accordion({
           tracking-[-0.72px] xl:py-[24px] xl:text-[24px] "
           onClick={e => {
             e.preventDefault();
-            setAccordionOpen(!accordionOpen);
+            setCurrent(index);
           }}
           aria-expanded={accordionOpen}
           aria-controls={`accordion-text-${id}`}
