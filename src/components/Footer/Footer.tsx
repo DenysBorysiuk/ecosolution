@@ -7,26 +7,20 @@ import Address from '../ui/Address';
 
 const Footer = () => {
   return (
-    <footer className="sb">
-      <div className="mb-[24px] flex items-center smOnly:justify-between">
-        <Logo />
+    <footer className="border-t border-accent pt-[24px] md:pt-[40px]">
+      <div className="mb-[24px] flex flex-wrap md:items-center smOnly:justify-between smOnly:gap-y-[24px]">
+        <Logo className="w-[269px] md:order-1 md:mr-[97px] xl:mr-[512px]" />
         <Link
-          className="icon h-[32px] w-[32px] rotate-[-90deg] bg-accent"
+          className="anim icon h-[32px] w-[32px] rotate-[-90deg] bg-accent hover:bg-primary 
+          hover:text-accent md:order-3"
           href="#main"
+          arial-label="scroll to main section"
         >
           <Arrow />
         </Link>
+        <SocialIcons className="flex justify-center gap-[8px] md:order-2  md:mr-auto smOnly:w-full" />
       </div>
-      <SocialIcons className="mb-[24px] flex justify-center gap-[8px]" />
-
       <Address />
-      {/* <div className="mb-[24px] flex items-center tracking-[-0.64px] smOnly:flex-col smOnly:gap-[16px]">
-        <address className="not-italic md:mr-auto">
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-        </address>
-        <Link href="mailto:office@ecosolution.com">office@ecosolution.com</Link>
-        <p className="md:ml-[50px] xl:ml-[167px]">ecosolution &copy; 2023</p>
-      </div> */}
     </footer>
   );
 };
