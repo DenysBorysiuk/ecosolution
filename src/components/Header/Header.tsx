@@ -26,21 +26,23 @@ const Header = () => {
     <header
       className={`${
         isScrolled ? 'bg-white' : 'bg-transparent'
-      } fixed left-0 right-0 top-0 z-10 flex h-[112px] items-center`}
+      } fixed left-0 right-0 top-0 z-10  h-[112px] w-full `}
       id="header"
     >
-      <Logo />
-      <BurgerMenu />
+      <div className="container flex items-center pt-[36px] xl:max-w-screen-xl">
+        <Logo />
+        <BurgerMenu />
 
-      <button
-        className="btn-filled anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
-        onClick={e => smoothScroll(e, 'contacts')}
-      >
-        Get in touch
-        <span className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent">
-          <ArrowIcon />
-        </span>
-      </button>
+        <button
+          className="btn-filled anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
+          onClick={e => smoothScroll(e, 'contacts')}
+        >
+          Get in touch
+          <span className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent">
+            <ArrowIcon />
+          </span>
+        </button>
+      </div>
     </header>
   );
 };

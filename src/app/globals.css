@@ -21,7 +21,6 @@ body {
   @apply relative bg-body font-fira_sans  font-normal leading-[1.2] tracking-[-0.64px] text-primary;
 }
 
-header,
 footer,
 section {
   @apply container  xl:max-w-screen-xl;
