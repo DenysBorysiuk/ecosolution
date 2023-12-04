@@ -23,8 +23,8 @@ const MainSection = () => {
             biomass
           </p>
           <button
-            className="link-btn anim w-[141px] border border-accent 
-          pl-[12px] hover:border-primary smOnly:mx-auto"
+            className="link-btn anim w-[141px] justify-start border 
+           border-accent hover:border-primary smOnly:mx-auto"
             onClick={e => smoothScroll(e, 'cases')}
           >
             Learn more
