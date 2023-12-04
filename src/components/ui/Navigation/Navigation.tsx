@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, MouseEvent } from 'react';
+import { MouseEvent } from 'react';
 import { NAV_LINKS } from '@/constants';
 import { smoothScroll } from '@/utils/smoothScroll';
+import Arrow from 'public/icons/arrow-md.svg';
 
 type NavigationProps = {
   onClose: () => void;
@@ -35,10 +36,11 @@ const Navigation = ({
                   ? 'text-accent'
                   : 'text-white xl:text-white/25'
               }
-              anim text-[24px] 
-               tracking-[-0.96px] xl:hover:text-white`}
+              anim flex items-center gap-[8px]
+               text-[24px] tracking-[-0.96px] xl:hover:text-white`}
             >
               {link.title}
+              <Arrow className=" rotate-[-45deg]" />
             </a>
           </li>
         ))}

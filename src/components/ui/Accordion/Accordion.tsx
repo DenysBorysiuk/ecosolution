@@ -5,12 +5,17 @@ import AccordionIcon from '../AccordionIcon/AccordionIcon';
 
 type AccordionProps = {
   children: React.ReactNode;
-  title: string;
+  question: string;
   id: string;
   active?: boolean;
 };
 
-export default function Accordion({ children, title, id, active = false }: AccordionProps) {
+export default function Accordion({
+  children,
+  question,
+  id,
+  active = false,
+}: AccordionProps) {
   const [accordionOpen, setAccordionOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -18,10 +23,11 @@ export default function Accordion({ children, title, id, active = false }: Accor
   }, []);
 
   return (
-    <div className="py-[16px]">
+    <div className="">
       <p>
         <button
-          className="flex w-full items-center justify-between py-[16px] text-left font-semibold"
+          className="flex w-full items-center justify-between py-[16px] text-justify 
+          text-[18px] tracking-[-0.72px]"
           onClick={e => {
             e.preventDefault();
             setAccordionOpen(!accordionOpen);
@@ -30,7 +36,7 @@ export default function Accordion({ children, title, id, active = false }: Accor
           aria-controls={`accordion-text-${id}`}
         >
           <AccordionIcon accordionOpen={accordionOpen} />
-          <span>{title}</span>
+          <span>{question}</span>
         </button>
       </p>
       <div
@@ -38,11 +44,15 @@ export default function Accordion({ children, title, id, active = false }: Accor
         role="region"
         aria-labelledby={`accordion-title-${id}`}
         className={`grid overflow-hidden text-sm text-slate-600 transition-all duration-300 ease-in-out ${
-          accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+          accordionOpen
+            ? 'grid-rows-[1fr] opacity-100'
+            : 'grid-rows-[0fr] opacity-0'
         }`}
       >
-        <div className="overflow-hidden">
-          <p className="pb-3">{children}</p>
+        <div className="overflow-hidden  ">
+          <p className="pb-[16px] pl-[24px] text-justify text-[14px] tracking-[-0.56]">
+            {children}
+          </p>
         </div>
       </div>
     </div>

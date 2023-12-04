@@ -5,7 +5,9 @@ type accordionIconProps = {
 const AccordionIcon = ({ accordionOpen }: accordionIconProps) => {
   return (
     <svg
-      className={`mr-[8px] shrink-0  ${accordionOpen ? 'fill-[#173D33]' : 'fill-[#97D28B]'}`}
+      className={`mr-[8px] shrink-0  ${
+        accordionOpen ? 'fill-[#173D33]' : 'fill-[#97D28B]'
+      }`}
       width="16"
       height="16"
       xmlns="http://www.w3.org/2000/svg"
