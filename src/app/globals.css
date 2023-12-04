@@ -49,7 +49,11 @@ h3 {
   @apply flex items-center justify-center rounded-full;
 }
 
-.link-btn {
+.btn {
+  @apply flex h-[39px] items-center gap-[12px] rounded-full pl-[16px] text-[16px] tracking-[-0.64px];
+}
+
+.btn-filled {
   @apply flex h-[39px] items-center justify-center gap-[12px] rounded-full hover:bg-[#173D33] hover:text-[#97D28B];
 }
 

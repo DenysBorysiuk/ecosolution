@@ -33,7 +33,7 @@ const Header = () => {
       <BurgerMenu />
 
       <button
-        className="link-btn anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
+        className="btn-filled anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
         onClick={e => smoothScroll(e, 'contacts')}
       >
         Get in touch

@@ -134,7 +134,7 @@ const ContactForm = () => {
       </div>
 
       <button
-        className="anim link-btn group ml-auto w-[100px] border border-accent hover:border-primary"
+        className="anim btn group ml-auto w-[100px] border border-accent hover:border-primary"
         type="submit"
       >
         Send

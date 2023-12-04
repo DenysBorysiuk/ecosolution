@@ -32,7 +32,7 @@ const FaqSection = () => {
             Didn't find the answer to your question?
           </p>
           <button
-            className="link-btn anim group  mx-auto w-[141px] rounded-full bg-accent"
+            className="btn-filled anim group  mx-auto w-[141px] rounded-full bg-accent"
             onClick={e => smoothScroll(e, 'contacts')}
           >
             Get in touch
