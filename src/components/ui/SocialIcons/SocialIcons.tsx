@@ -15,6 +15,7 @@ const SocialIcons = ({ color, className }: SocialIcons) => {
           href="https://facebook.com"
           className={`text-${color} anim hover:text-accent`}
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="link to facebook"
         >
           <Facebook />
@@ -25,6 +26,7 @@ const SocialIcons = ({ color, className }: SocialIcons) => {
           href="https://instagram.com"
           className={`text-${color} anim hover:text-accent`}
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="link to instagram"
         >
           <Instagram />
