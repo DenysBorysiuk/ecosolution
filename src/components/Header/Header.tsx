@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, MouseEvent } from 'react';
+import { useEffect, useState } from 'react';
 import { smoothScroll } from '@/utils/smoothScroll';
 import Logo from '@/components/ui/Logo';
 import BurgerMenu from '@/components/ui/BurgerMenu';

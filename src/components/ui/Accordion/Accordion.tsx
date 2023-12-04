@@ -26,8 +26,8 @@ export default function Accordion({
     <div className="">
       <p>
         <button
-          className="flex w-full items-center justify-between py-[16px] text-justify 
-          text-[18px] tracking-[-0.72px]"
+          className="flex w-full items-center justify-between py-[16px] text-justify text-[18px] 
+          tracking-[-0.72px] xl:py-[24px] xl:text-[24px] "
           onClick={e => {
             e.preventDefault();
             setAccordionOpen(!accordionOpen);
