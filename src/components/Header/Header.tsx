@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -26,10 +26,10 @@ const Header = () => {
     <header
       className={`${
         isScrolled ? 'bg-white' : 'bg-transparent'
-      } fixed left-0 right-0 top-0 z-10  h-[112px] w-full `}
+      }  ease; fixed left-0 right-0 top-0 z-10 transition duration-200`}
       id="header"
     >
-      <div className="container flex items-center pt-[36px] xl:max-w-screen-xl">
+      <div className="container flex items-center py-[36px] xl:max-w-screen-xl xl:py-[24px]">
         <Logo />
         <BurgerMenu />
 
