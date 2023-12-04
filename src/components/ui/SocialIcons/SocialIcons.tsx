@@ -3,8 +3,8 @@ import Facebook from 'public/icons/facebook.svg';
 import Instagram from 'public/icons/instagram.svg';
 
 type SocialIcons = {
-  color: string;
-  className: string;
+  color?: string;
+  className?: string;
 };
 
 const SocialIcons = ({ color, className }: SocialIcons) => {
