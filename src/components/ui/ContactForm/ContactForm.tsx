@@ -51,7 +51,7 @@ const ContactForm = () => {
             &#42; Full name
           </span>
           <input
-            className={`w-full border-b border-accent bg-form_bg pb-[8px] text-[18px] 
+            className={`w-full border-b  bg-form_bg pb-[8px] text-[18px] 
             tracking-[-0.72px] outline-none xl:text-[20px]
             ${
               errors.name && touched.name ? 'border-[#D28B8B]' : 'border-accent'
@@ -74,7 +74,7 @@ const ContactForm = () => {
             &#42; Email
           </span>
           <input
-            className={`w-full border-b border-accent bg-form_bg pb-[8px] 
+            className={`w-full border-b  bg-form_bg pb-[8px] 
              text-[18px] tracking-[-0.72px] outline-none xl:text-[20px]
               ${
                 errors.name && touched.name
@@ -99,7 +99,7 @@ const ContactForm = () => {
             &#42; Phone
           </span>
           <input
-            className={`block w-full border-b border-accent bg-form_bg pb-[8px] text-[18px]
+            className={`block w-full border-b  bg-form_bg pb-[8px] text-[18px]
             tracking-[-0.72px] outline-none xl:text-[20px]
              ${
                errors.name && touched.name
