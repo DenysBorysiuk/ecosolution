@@ -5,10 +5,10 @@ const FaqSection = () => {
   return (
     <section className="section" id="faq">
       <div className="flex flex-col flex-wrap md:h-[632px]">
-        <h2 className="heading2 h-[100px]  md:w-[342px]">
-          Frequently asked questions
+        <h2 className="heading2 md:h-[100px] md:w-[342px]">
+          Frequently asked <br /> questions
         </h2>
-        <div className="order-[-1] divide-y divide-accent md:w-[342px] xl:w-[560px]">
+        <div className="divide-y divide-accent md:order-[-1] md:w-[342px] xl:w-[560px]">
           {data.faqs.map((faq, index) => (
             <Accordion
               key={index}

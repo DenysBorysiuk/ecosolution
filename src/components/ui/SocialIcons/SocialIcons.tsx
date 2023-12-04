@@ -14,6 +14,7 @@ const SocialIcons = ({ color, className }: SocialIcons) => {
         <Link
           href="https://facebook.com"
           className={`text-${color} anim hover:text-accent`}
+          target="_blank"
         >
           <Facebook />
         </Link>
@@ -22,6 +23,7 @@ const SocialIcons = ({ color, className }: SocialIcons) => {
         <Link
           href="https://instagram.com"
           className={`text-${color} anim hover:text-accent`}
+          target="_blank"
         >
           <Instagram />
         </Link>

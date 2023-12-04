@@ -28,7 +28,7 @@ const MainSection = () => {
             onClick={e => smoothScroll(e, 'cases')}
           >
             Learn more
-            <span className="icon h-[32px] w-[32px] bg-accent">
+            <span className="icon h-[32px] w-[32px] bg-accent text-primary">
               <Arrow />
             </span>
           </button>
