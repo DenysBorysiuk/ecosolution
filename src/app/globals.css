@@ -22,7 +22,7 @@ section {
 }
 
 .section {
-  @apply mb-[36px] md:mb-[100px] xl:mb-[120px];
+  @apply pb-[36px] md:pb-[100px] xl:pb-[120px];
 }
 
 h1,

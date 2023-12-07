@@ -1,7 +1,5 @@
 import Logo from '@/components/ui/Logo/Logo';
 import SocialIcons from '@/components/ui/SocialIcons';
-
-import Arrow from 'public/icons/arrow-md.svg';
 import Address from '@/components/ui/Address';
 import ButtonUp from '@/components/ui/ButtonUp/ButtonUp';
 
