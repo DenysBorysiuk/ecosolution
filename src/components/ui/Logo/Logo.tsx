@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import LogoIcon from 'public/icons/logo.svg';
-
-type LogoProps = {
-  className?: string;
-};
+import { LogoProps } from './type';
 
 const Logo = ({ className }: LogoProps) => {
   return (

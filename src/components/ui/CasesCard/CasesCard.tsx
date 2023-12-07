@@ -1,11 +1,5 @@
 import Arrow from 'public/icons/arrow-xl.svg';
-
-type CasesCardProps = {
-  img: string;
-  title: string;
-  text: string;
-  date: string;
-};
+import { CasesCardProps } from './type';
 
 const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
   return (

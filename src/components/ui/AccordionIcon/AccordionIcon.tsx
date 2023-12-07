@@ -1,8 +1,6 @@
-type accordionIconProps = {
-  accordionOpen: boolean;
-};
+import { AccordionIconProps } from './type';
 
-const AccordionIcon = ({ accordionOpen }: accordionIconProps) => {
+const AccordionIcon = ({ accordionOpen }: AccordionIconProps) => {
   return (
     <svg
       className={`mr-[8px] shrink-0  ${

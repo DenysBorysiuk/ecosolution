@@ -1,16 +1,7 @@
 'use client';
 
-import { Dispatch, SetStateAction } from 'react';
-import AccordionIcon from '../AccordionIcon/AccordionIcon';
-
-type AccordionProps = {
-  children: React.ReactNode;
-  question: string;
-  id: string;
-  accordionOpen: boolean;
-  setCurrent: Dispatch<SetStateAction<number>>;
-  index: number;
-};
+import AccordionIcon from '@/components/ui/AccordionIcon';
+import { AccordionProps } from './type';
 
 export default function Accordion({
   children,

@@ -1,8 +1,5 @@
 import Link from 'next/link';
-
-type AddressProps = {
-  className?: string;
-};
+import { AddressProps } from './type';
 
 const Address = ({ className }: AddressProps) => {
   return (

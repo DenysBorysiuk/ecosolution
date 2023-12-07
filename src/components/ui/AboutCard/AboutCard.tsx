@@ -1,11 +1,4 @@
-import { ReactNode } from 'react';
-
-type AboutCardProps = {
-  children: ReactNode;
-  title: string;
-  text: string;
-  className?: string;
-};
+import { AboutCardProps } from './type';
 
 const AboutCard = ({ children, title, text, className }: AboutCardProps) => {
   return (

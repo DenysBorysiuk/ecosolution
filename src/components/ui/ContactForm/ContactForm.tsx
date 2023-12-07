@@ -3,6 +3,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Arrow from 'public/icons/arrow-md.svg';
+import { Values } from './type';
 
 const schema = Yup.object().shape({
   name: Yup.string()
@@ -13,13 +14,6 @@ const schema = Yup.object().shape({
   phone: Yup.string().required('Wrong Phone'),
   message: Yup.string(),
 });
-
-type Values = {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-};
 
 const ContactForm = () => {
   const formik = useFormik({
