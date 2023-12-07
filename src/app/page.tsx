@@ -4,7 +4,6 @@ import ValuesSection from '@/components/AboutSection';
 import CasesSection from '@/components/CasesSection';
 import FaqSection from '@/components/FaqSection';
 import ContactUsSection from '@/components/ContactUsSection';
-import BurgerMenu from '@/components/ui/BurgerMenu';
 
 export default function Home() {
   return (

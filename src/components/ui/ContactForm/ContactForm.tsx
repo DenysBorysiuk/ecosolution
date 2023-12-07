@@ -1,19 +1,10 @@
 'use client';
 
 import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import toast from 'react-hot-toast';
 import Arrow from 'public/icons/arrow-md.svg';
 import { Values } from './type';
-
-const schema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Wrong Fullname'),
-  email: Yup.string().email('Invalid email').required('Wrong Email'),
-  phone: Yup.string().required('Wrong Phone'),
-  message: Yup.string(),
-});
+import { schema } from './schema';
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -28,6 +19,7 @@ const ContactForm = () => {
 
     onSubmit: (values: Values) => {
       console.log(values);
+      toast.success('Successfully sent!');
     },
   });
 
@@ -127,10 +119,7 @@ const ContactForm = () => {
         </label>
       </div>
 
-      <button
-        className="anim btn group ml-auto w-[100px] "
-        type="submit"
-      >
+      <button className="anim btn group ml-auto w-[100px] " type="submit">
         Send
         <span className="icon flex h-[32px] w-[32px] bg-accent text-primary">
           <Arrow />
