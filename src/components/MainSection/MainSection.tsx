@@ -1,9 +1,9 @@
 'use client';
 
-import ResponsiveImage from '@/components/ui/ResponsiveImage';
 import Arrow from 'public/icons/arrow-md.svg';
-import { smoothScroll } from '@/utils/smoothScroll';
+import ResponsiveImage from '@/components/ui/ResponsiveImage';
 import Address from '@/components/ui/Address';
+import { smoothScroll } from '@/utils/smoothScroll';
 
 const MainSection = () => {
   return (
@@ -23,8 +23,7 @@ const MainSection = () => {
             biomass
           </p>
           <button
-            className="btn anim w-[141px] border border-accent
-            hover:border-primary smOnly:mx-auto"
+            className="btn anim w-[141px] smOnly:mx-auto"
             onClick={e => smoothScroll(e, 'cases')}
           >
             Learn more

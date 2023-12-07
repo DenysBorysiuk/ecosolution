@@ -13,7 +13,10 @@ const Contacts = () => {
           xl:mb-[16px] xl:text-[24px] xl:tracking-[-0.96px]"
           href="tel:office@ecosolution.com"
         >
-          <Call className="anim h-[20px] w-[20px] group-hover:text-accent xl:h-[24px] xl:w-[24px]" />
+          <Call
+            className="anim h-[20px] w-[20px] group-hover:text-accent
+             group-focus:text-accent  xl:h-[24px] xl:w-[24px]"
+          />
           38 (098) 12 34 567
         </a>
         <a
@@ -21,7 +24,10 @@ const Contacts = () => {
           xl:tracking-[-0.96px]"
           href="tel:office@ecosolution.com"
         >
-          <Call className="anim h-[20px] w-[20px] group-hover:text-accent xl:h-[24px] xl:w-[24px] " />
+          <Call
+            className="anim h-[20px] w-[20px] group-hover:text-accent group-focus:text-accent xl:h-[24px] 
+          xl:w-[24px]"
+          />
           38 (093) 12 34 567
         </a>
       </li>
@@ -32,7 +38,10 @@ const Contacts = () => {
           xl:text-[24px] xl:tracking-[-0.96px]"
           href="mailto:office@ecosolution.com"
         >
-          <Sms className="anim h-[20px] w-[20px] group-hover:text-accent xl:h-[24px] xl:w-[24px] " />
+          <Sms
+            className="anim h-[20px] w-[20px] group-hover:text-accent group-focus:text-accent 
+            xl:h-[24px] xl:w-[24px] "
+          />
           office@ecosolution.com
         </a>
       </li>

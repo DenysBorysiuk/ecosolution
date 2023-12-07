@@ -36,7 +36,7 @@ h3 {
 }
 
 .heading3 {
-  @apply mb-[24px] text-[16px]  md:mb-[51px]  md:text-[18px] xl:mb-[94px] xl:text-[32px];
+  @apply mb-[24px] text-[16px]  md:mb-[51px] md:text-[18px] xl:mb-[94px] xl:text-[32px];
 }
 
 .icon {
@@ -44,13 +44,14 @@ h3 {
 }
 
 .btn {
-  @apply flex h-[39px] items-center gap-[12px] rounded-full pl-[16px] text-[16px] tracking-[-0.64px] 
-  hover:bg-[#173D33] hover:text-[#97D28B] focus:bg-[#173D33] focus:text-[#97D28B];
+  @apply flex h-[39px] items-center gap-[12px] rounded-full border border-accent pl-[16px] 
+  text-[16px] tracking-[-0.64px] hover:border-primary hover:bg-primary
+  hover:text-accent focus:border-primary focus:bg-primary focus:text-accent;
 }
 
 .btn-filled {
-  @apply flex h-[39px] items-center justify-center gap-[12px] rounded-full hover:bg-[#173D33] 
-  hover:text-[#97D28B] focus:bg-[#173D33] focus:text-[#97D28B];
+  @apply flex h-[39px] items-center justify-center gap-[12px] rounded-full hover:bg-primary 
+  hover:text-accent focus:bg-primary focus:text-accent;
 }
 
 .anim {

@@ -17,7 +17,10 @@ const CasesSection = () => {
   return (
     <section className="section" id="cases">
       <div className="line relative mb-[24px] md:mb-[36px] md:flex ">
-        <h2 className="heading2 w-[320px] md:mr-[100px] md:w-[264px] xl:mr-[383px] xl:w-[396px] smOnly:mb-[24px]">
+        <h2
+          className="heading2 w-[320px] md:mr-[100px] md:w-[264px] xl:mr-[383px] 
+          xl:w-[396px] smOnly:mb-[24px]"
+        >
           Successful cases of our company
         </h2>
         <div className="flex grow items-end justify-between">
@@ -28,7 +31,7 @@ const CasesSection = () => {
           <div className="flex gap-[12px] xl:gap-[24px]">
             <button
               className="button-prev icon anim h-[66px] w-[66px] border border-primary
-              hover:border-accent hover:text-accent"
+              hover:border-accent hover:text-accent focus:border-accent focus:text-accent"
               type="button"
               aria-label="to previous slide"
             >
@@ -36,7 +39,8 @@ const CasesSection = () => {
             </button>
             <button
               className="button-next icon anim h-[66px] w-[66px] rotate-180 border
-               border-primary hover:border-accent hover:text-accent"
+               border-primary hover:border-accent hover:text-accent
+               focus:border-accent focus:text-accent"
               type="button"
               aria-label="to next slide"
             >

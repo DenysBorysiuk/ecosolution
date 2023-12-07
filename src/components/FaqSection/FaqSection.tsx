@@ -37,11 +37,14 @@ const FaqSection = () => {
             Didn't find the answer to your question?
           </p>
           <button
-            className="btn-filled anim group  mx-auto w-[141px] rounded-full bg-accent"
+            className="btn-filled anim group  mx-auto w-[141px] bg-accent"
             onClick={e => smoothScroll(e, 'contacts')}
           >
             Get in touch
-            <span className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent">
+            <span
+              className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent
+            group-focus:bg-accent"
+            >
               <ArrowIcon />
             </span>
           </button>

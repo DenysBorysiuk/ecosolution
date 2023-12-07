@@ -13,7 +13,7 @@ const SocialIcons = ({ color, className }: SocialIcons) => {
       <li>
         <Link
           href="https://facebook.com"
-          className={`text-${color} anim hover:text-accent`}
+          className={`text-${color} anim hover:text-accent focus:text-accent`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="link to facebook"
@@ -24,7 +24,7 @@ const SocialIcons = ({ color, className }: SocialIcons) => {
       <li>
         <Link
           href="https://instagram.com"
-          className={`text-${color} anim hover:text-accent`}
+          className={`text-${color} anim hover:text-accent focus:text-accent`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="link to instagram"

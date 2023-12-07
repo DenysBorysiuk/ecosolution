@@ -42,9 +42,10 @@ const BurgerMenu = () => {
     <div className="ml-auto">
       <button
         className="anim flex h-[40px] w-[40px] items-center justify-center 
-        rounded-full  bg-[#DCEFD8] hover:bg-accent"
+        rounded-full  bg-[#DCEFD8] hover:bg-accent focus:bg-accent"
         onClick={() => setIsOpen(true)}
         aria-label="Menu"
+        type="button"
       >
         <Menu width={16} height={16} />
       </button>
@@ -64,7 +65,7 @@ const BurgerMenu = () => {
             <div>
               <button
                 className="anim mb-[8px] flex items-center justify-center text-[20px]
-              text-white hover:text-accent xl:text-[16px]"
+              text-white hover:text-accent focus:text-accent xl:text-[16px]"
                 type="button"
                 onClick={() => setIsOpen(false)}
               >

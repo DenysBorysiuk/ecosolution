@@ -37,7 +37,7 @@ const Navigation = ({
                   : 'text-white xl:text-white/25'
               }
               anim flex items-center gap-[8px]
-               text-[24px] tracking-[-0.96px] xl:hover:text-white`}
+               text-[24px] tracking-[-0.96px] xl:hover:text-white xl:focus:text-white`}
             >
               {link.title}
               <Arrow className=" rotate-[-45deg]" />

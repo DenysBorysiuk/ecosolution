@@ -38,7 +38,10 @@ const Header = () => {
           onClick={e => smoothScroll(e, 'contacts')}
         >
           Get in touch
-          <span className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent">
+          <span
+            className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent
+          group-focus:bg-accent"
+          >
             <ArrowIcon />
           </span>
         </button>
