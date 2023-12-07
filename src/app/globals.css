@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* draft */
-.sb {
-  @apply border-2 border-red-600;
-}
-
 *,
 :after,
 :before {
@@ -49,11 +44,13 @@ h3 {
 }
 
 .btn {
-  @apply flex h-[39px] items-center gap-[12px] rounded-full pl-[16px] text-[16px] tracking-[-0.64px] hover:bg-[#173D33] hover:text-[#97D28B];
+  @apply flex h-[39px] items-center gap-[12px] rounded-full pl-[16px] text-[16px] tracking-[-0.64px] 
+  hover:bg-[#173D33] hover:text-[#97D28B] focus:bg-[#173D33] focus:text-[#97D28B];
 }
 
 .btn-filled {
-  @apply flex h-[39px] items-center justify-center gap-[12px] rounded-full hover:bg-[#173D33] hover:text-[#97D28B];
+  @apply flex h-[39px] items-center justify-center gap-[12px] rounded-full hover:bg-[#173D33] 
+  hover:text-[#97D28B] focus:bg-[#173D33] focus:text-[#97D28B];
 }
 
 .anim {
