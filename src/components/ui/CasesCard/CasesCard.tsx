@@ -21,7 +21,7 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
           />
           <img
             className="h-full w-full object-cover"
-            src={`/images/cases}/${img}_lg@1x.webp`}
+            src={`/images/cases/${img}_lg@1x.webp`}
             alt={text}
             loading="lazy"
           />
