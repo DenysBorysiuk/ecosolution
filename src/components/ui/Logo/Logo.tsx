@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import LogoIcon from 'public/icons/logo.svg';
 
 type LogoProps = {
   className?: string;
@@ -7,8 +7,12 @@ type LogoProps = {
 
 const Logo = ({ className }: LogoProps) => {
   return (
-    <Link href="/" className={`${className}`}>
-      <Image src="/icons/logo.svg" alt="logo" width={269} height={40} />
+    <Link
+      href="/"
+      className={`${className} anim h-[40px] w-[269px]
+      hover:text-[#97D28B] focus:text-[#97D28B]`}
+    >
+      <LogoIcon />
     </Link>
   );
 };
