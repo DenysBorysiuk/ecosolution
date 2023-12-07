@@ -1,10 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { smoothScroll } from '@/utils/smoothScroll';
 import Logo from '@/components/ui/Logo';
 import BurgerMenu from '@/components/ui/BurgerMenu';
-import ArrowIcon from 'public/icons/arrow-sm.svg';
+import LinkButton from '@/components/ui/LinkButton';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,19 +31,7 @@ const Header = () => {
       <div className="container flex items-center py-[36px] xl:max-w-screen-xl xl:py-[24px]">
         <Logo />
         <BurgerMenu />
-
-        <button
-          className="btn-filled anim group ml-[12px] w-[141px] rounded-full bg-accent smOnly:hidden"
-          onClick={e => smoothScroll(e, 'contacts')}
-        >
-          Get in touch
-          <span
-            className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent
-          group-focus:bg-accent"
-          >
-            <ArrowIcon />
-          </span>
-        </button>
+        <LinkButton linkTo={'contacts'}>Get in touch</LinkButton>
       </div>
     </header>
   );

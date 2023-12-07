@@ -1,10 +1,9 @@
 'use client';
 
-import Accordion from '@/components/ui/Accordion';
-import { smoothScroll } from '@/utils/smoothScroll';
-import ArrowIcon from 'public/icons/arrow-sm.svg';
-import data from '@/data/accordion.json';
 import { useState } from 'react';
+import Accordion from '@/components/ui/Accordion';
+import LinkButton from '@/components/ui/LinkButton';
+import data from '@/data/accordion.json';
 
 const FaqSection = () => {
   const [current, setCurrent] = useState(0);
@@ -36,18 +35,7 @@ const FaqSection = () => {
           >
             Didn't find the answer to your question?
           </p>
-          <button
-            className="btn-filled anim group  mx-auto w-[141px] bg-accent"
-            onClick={e => smoothScroll(e, 'contacts')}
-          >
-            Get in touch
-            <span
-              className="anim h-[14px] w-[14px] rounded-full bg-primary group-hover:bg-accent
-            group-focus:bg-accent"
-            >
-              <ArrowIcon />
-            </span>
-          </button>
+          <LinkButton linkTo={'contacts'}>Contact Us</LinkButton>
         </div>
       </div>
     </section>

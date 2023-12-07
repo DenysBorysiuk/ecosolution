@@ -5,7 +5,8 @@ import Arrow from 'public/icons/arrow-md.svg';
 
 const ButtonUp = () => {
   return (
-    <button
+    <a
+      href="#"
       className="anim icon h-[32px] w-[32px] rotate-[-90deg] bg-accent hover:bg-primary 
           hover:text-accent focus:bg-primary focus:text-accent 
           md:order-3"
@@ -13,7 +14,7 @@ const ButtonUp = () => {
       aria-label="Top of page"
     >
       <Arrow />
-    </button>
+    </a>
   );
 };
 

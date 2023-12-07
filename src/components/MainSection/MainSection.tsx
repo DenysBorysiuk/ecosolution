@@ -22,7 +22,8 @@ const MainSection = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
-          <button
+          <a
+            href="#"
             className="btn anim w-[141px] smOnly:mx-auto"
             onClick={e => smoothScroll(e, 'cases')}
           >
@@ -30,7 +31,7 @@ const MainSection = () => {
             <span className="icon h-[32px] w-[32px] bg-accent text-primary">
               <Arrow />
             </span>
-          </button>
+          </a>
         </div>
       </div>
 
