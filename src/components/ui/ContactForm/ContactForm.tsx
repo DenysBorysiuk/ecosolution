@@ -17,9 +17,10 @@ const ContactForm = () => {
 
     validationSchema: schema,
 
-    onSubmit: (values: Values) => {
+    onSubmit: (values: Values, { resetForm }) => {
       console.log(values);
       toast.success('Successfully sent!');
+      resetForm();
     },
   });
 
