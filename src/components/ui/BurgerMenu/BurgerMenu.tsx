@@ -58,9 +58,9 @@ const BurgerMenu = () => {
           onClick={onBackdropClick}
         >
           <div
-            className=" flex h-[701px] flex-col justify-between rounded-[25px]
-            bg-primary/75 p-[24px]  md:ml-auto md:w-[320px] xl:h-[873px]
-            xl:w-[365px] smOnly:mx-auto smOnly:max-w-[440px]"
+            className="flex h-[701px] flex-col justify-between
+            rounded-[25px] bg-primary/75  p-[24px] md:ml-auto md:w-[320px]
+            xl:h-[873px] xl:w-[365px] smOnly:mx-auto smOnly:max-w-[440px]"
           >
             <div>
               <button
