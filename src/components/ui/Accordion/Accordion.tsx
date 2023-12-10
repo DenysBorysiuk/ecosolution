@@ -12,7 +12,7 @@ export default function Accordion({
   index,
 }: AccordionProps) {
   return (
-    <div className="">
+    <div>
       <p>
         <button
           className="flex w-full items-center justify-between py-[16px] text-justify text-[18px] 
@@ -31,7 +31,7 @@ export default function Accordion({
       <div
         id={`accordion-text-${id}`}
         role="region"
-        aria-labelledby={`accordion-title-${id}`}
+        // aria-labelledby={`accordion-title-${id}`}
         className={`grid overflow-hidden text-sm  transition-all duration-300 ease-in-out ${
           accordionOpen
             ? 'grid-rows-[1fr] opacity-100'

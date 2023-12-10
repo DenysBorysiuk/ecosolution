@@ -93,7 +93,7 @@ const ContactForm = () => {
                  ? 'border-[#D28B8B]'
                  : 'border-accent'
              }`}
-            type="phone"
+            type="text"
             name="phone"
             placeholder="380961234567"
             value={values.phone}
