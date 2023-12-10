@@ -31,14 +31,13 @@ export default function Accordion({
       <div
         id={`accordion-text-${id}`}
         role="region"
-        // aria-labelledby={`accordion-title-${id}`}
         className={`grid overflow-hidden text-sm  transition-all duration-300 ease-in-out ${
           accordionOpen
             ? 'grid-rows-[1fr] opacity-100'
             : 'grid-rows-[0fr] opacity-0'
         }`}
       >
-        <div className="overflow-hidden  ">
+        <div className="overflow-hidden">
           <p className="pb-[16px] pl-[24px] text-justify text-[14px] tracking-[-0.56px]">
             {children}
           </p>
