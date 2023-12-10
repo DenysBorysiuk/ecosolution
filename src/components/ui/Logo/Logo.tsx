@@ -8,6 +8,7 @@ const Logo = ({ className }: LogoProps) => {
       href="/"
       className={`${className} anim h-[40px] w-[269px]
       hover:text-[#97D28B] focus:text-[#97D28B]`}
+      aria-label="Logo"
     >
       <LogoIcon />
     </Link>
