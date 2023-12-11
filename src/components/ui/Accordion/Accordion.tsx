@@ -12,7 +12,7 @@ export default function Accordion({
   index,
 }: AccordionProps) {
   return (
-    <div>
+    <div className="border-t border-accent">
       <p>
         <button
           className="flex w-full items-center justify-between py-[16px] text-justify text-[18px] 
