@@ -13,7 +13,6 @@ const AboutSection = () => {
         <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px] smOnly:mb-[24px]">
           {data.heading}
         </h2>
-        <div className="hidden" />
         <p className="text-justify text-[16px] md:w-[342px] xl:w-[459px]">
           {data.paragraph}
         </p>

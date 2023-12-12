@@ -66,3 +66,8 @@ h3 {
   content: '';
   @apply absolute left-1/2 top-0 h-full w-[1px] bg-accent  smOnly:hidden;
 }
+
+.electricity::before {
+  content: '';
+  @apply absolute left-1/2 top-[80px] h-[48px] w-[1px] bg-accent md:top-[96px] md:h-[87px] xl:top-[112px];
+}
