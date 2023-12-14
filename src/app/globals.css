@@ -71,3 +71,32 @@ h3 {
   content: '';
   @apply absolute left-1/2 top-[80px] h-[48px] w-[1px] bg-accent md:top-[96px] md:h-[87px] xl:top-[112px];
 }
+
+.main-bg {
+  background-image: image-set(
+    url(/images/main/main_sm@1x.webp) 1x,
+    url(/images/main/main_sm@2x.webp) 2x
+  );
+
+  background-repeat: no-repeat;
+  background-position-y: 588px;
+  background-position-x: center;
+  background-size: 100% 200px;
+
+  @media screen and (min-width: 768px) {
+    background-size: auto 348px;
+    background-position-y: bottom;
+    background-image: image-set(
+      url(/images/main/main_md@1x.webp) 1x,
+      url(/images/main/main_md@2x.webp) 2x
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-size: auto 524px;
+    background-image: image-set(
+      url(/images/main/main_lg@1x.webp) 1x,
+      url(/images/main/main_lg@2x.webp) 2x
+    );
+  }
+}

@@ -1,14 +1,13 @@
 'use client';
 
 import Arrow from 'public/icons/arrow-md.svg';
-import ResponsiveImage from '@/components/ui/ResponsiveImage';
 import Address from '@/components/ui/Address';
 import { smoothScroll } from '@/utils/smoothScroll';
 
 const MainSection = () => {
   return (
     <section
-      className="section pt-[220px] md:pt-[240px] xl:pt-[264px]"
+      className="main-bg pb-[236px] pt-[220px] md:pb-[388px] md:pt-[240px]  xl:pb-[560px] xl:pt-[264px]"
       id="main"
     >
       <div className="mb-[24px] flex flex-col gap-[24px] md:flex-row md:gap-[65px] xl:gap-[296px]">
@@ -36,12 +35,7 @@ const MainSection = () => {
       </div>
 
       <div className="mb-[24px] h-[1px] w-full bg-accent" />
-
       <Address className="hidden" />
-
-      <div className="h-[200px] md:h-[348px] xl:h-[524px]">
-        <ResponsiveImage name={'main'} folder={'main'} alt={'wind turbine'} />
-      </div>
     </section>
   );
 };

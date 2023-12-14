@@ -8,7 +8,10 @@ import data from '@/data/about.json';
 
 const AboutSection = () => {
   return (
-    <section className="section" id="about">
+    <section
+      className="section pt-[36px] md:pt-[100px] xl:pt-[120px]"
+      id="about"
+    >
       <div className=" line relative mb-[36px] md:mb-[100px] md:flex xl:mb-[122px] ">
         <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px] smOnly:mb-[24px]">
           {data.heading}

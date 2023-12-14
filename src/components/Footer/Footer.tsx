@@ -11,7 +11,7 @@ const Footer = () => {
         <ButtonUp />
         <SocialIcons className="flex justify-center gap-[8px] md:order-2  md:mr-auto smOnly:w-full" />
       </div>
-      <Address />
+      <Address className="mb-[36px]" />
     </footer>
   );
 };
