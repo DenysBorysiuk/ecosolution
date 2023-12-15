@@ -22,6 +22,16 @@ const firaSans = Fira_Sans({
 export const metadata: Metadata = {
   title: 'Ecosolution',
   description: 'Renewable energy for any task',
+  openGraph: {
+    title: 'Ecosolution',
+    description: 'Renewable energy for any task',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        alt: 'Wind turbine',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
