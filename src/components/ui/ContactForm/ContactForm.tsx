@@ -18,8 +18,8 @@ const ContactForm = () => {
     validationSchema: schema,
 
     onSubmit: (values: Values, { resetForm }) => {
-      console.log(values);
       toast.success('Successfully sent!');
+      localStorage.setItem('formData', JSON.stringify(values));
       resetForm();
     },
   });
