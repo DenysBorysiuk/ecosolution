@@ -10,7 +10,10 @@ const MainSection = () => {
       className="main-bg pb-[236px] pt-[220px] md:pb-[388px] md:pt-[240px]  xl:pb-[560px] xl:pt-[264px]"
       id="main"
     >
-      <div className="mb-[24px] flex flex-col gap-[24px] md:flex-row md:gap-[65px] xl:gap-[296px]">
+      <div
+        className="mb-[24px] flex flex-col gap-[24px] border-b border-accent pb-[24px] md:mb-[16px]
+        md:flex-row md:gap-[65px] xl:mb-[12px] xl:gap-[296px]"
+      >
         <h1 className="text-[36px] md:w-[300px] md:text-[48px] xl:w-[485px] xl:text-[64px]">
           Renewable energy for any&nbsp;task
         </h1>
@@ -34,7 +37,6 @@ const MainSection = () => {
         </div>
       </div>
 
-      <div className="mb-[24px] h-[1px] w-full bg-accent" />
       <Address className="hidden" />
     </section>
   );
