@@ -22,9 +22,10 @@ const firaSans = Fira_Sans({
 export const metadata: Metadata = {
   title: 'Ecosolution',
   description: 'Renewable energy for any task',
+  metadataBase: new URL('https://ecosolution-ten.vercel.app/'),
 
   openGraph: {
-    url: 'https://ecosolution-ten.vercel.app/',
+    // url: 'https://ecosolution-ten.vercel.app/',
     title: 'Ecosolution',
     description: 'Renewable energy for any task',
     images: [
