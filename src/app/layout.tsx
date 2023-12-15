@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://ecosolution-ten.vercel.app/'),
 
   openGraph: {
-    // url: 'https://ecosolution-ten.vercel.app/',
+    url: 'https://ecosolution-ten.vercel.app/',
     title: 'Ecosolution',
     description: 'Renewable energy for any task',
     images: [
