@@ -7,7 +7,8 @@ import { smoothScroll } from '@/utils/smoothScroll';
 const MainSection = () => {
   return (
     <section
-      className="main-bg pb-[236px] pt-[220px] md:pb-[388px] md:pt-[240px]  xl:pb-[560px] xl:pt-[264px]"
+      className="main-bg pb-[236px] pt-[220px]  md:pb-[388px] md:pt-[240px]
+      xl:pb-[560px] xl:pt-[264px]"
       id="main"
     >
       <div

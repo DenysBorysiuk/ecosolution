@@ -18,7 +18,7 @@ body {
 
 footer,
 section {
-  @apply container  xl:max-w-screen-xl;
+  @apply container xl:max-w-screen-xl;
 }
 
 .section {
@@ -81,7 +81,7 @@ h3 {
   background-repeat: no-repeat;
   background-position-y: 588px;
   background-position-x: center;
-  background-size: 100% 200px;
+  background-size: 90% 200px;
 
   @media screen and (min-width: 768px) {
     background-size: auto 348px;
