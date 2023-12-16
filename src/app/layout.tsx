@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     url: 'https://ecosolution-ten.vercel.app/',
     title: 'Ecosolution',
     description: 'Renewable energy for any task',
+    type: 'website',
     images: [
       {
         url: '/images/og-image.jpg',
