@@ -1,13 +1,9 @@
 import Link from 'next/link';
 import Facebook from 'public/icons/facebook.svg';
 import Instagram from 'public/icons/instagram.svg';
+import { SocialIconsProps } from './type';
 
-type SocialIcons = {
-  color?: string;
-  className?: string;
-};
-
-const SocialIcons = ({ color, className }: SocialIcons) => {
+const SocialIcons = ({ color, className }: SocialIconsProps) => {
   return (
     <ul className={`flex ${className}`}>
       <li>
