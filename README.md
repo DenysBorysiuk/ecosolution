@@ -11,7 +11,7 @@ specifications.
 ## Used Technologies:
 
 - Next.js
-- React
+- TypeScript
 - Tailwind
 
 ## Acceptance Criteria
