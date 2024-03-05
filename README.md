@@ -1,20 +1,25 @@
-# Landing page for Ecosolution
+# Ecosolution
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**[View live page](ecosolution-ten.vercel.app)**
 
-## Goals
+---
+
+![Site image](./public/images/og-image.jpg)
+
+## 🗂️ Project description 🗂️
+
+### Goals
 
 Implement the Ecosolution landing page according to the technical
 specifications.
 
-## Used Technologies:
+### Used Technologies:
 
 - Next.js
 - TypeScript
 - Tailwind
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 - The layout is fixed in pixels.
 - Semantic and valid markup; accessibility (a11y) is a bonus.
@@ -25,3 +30,41 @@ specifications.
 - Utilize the Mobile-First approach.
 - Clean code with preserved formatting. Consider using ESLint/Prettier.
 - Code is divided into separate components.
+
+### Supported Languages
+
+- English
+
+### Project structure
+
+```mermaid
+graph LR
+
+  Z{Enter} --> L(Layout)
+  L ---> B(Header)
+  L ---> A((Home page))
+  L ---> C(Footer)
+  A --> AA[Section 1. Main]
+  A --> AB[Section 2. Values]
+  A --> AC[Section 3. Electricity]
+  A --> AD[Section 4. Cases]
+  A --> AE[Section 5. FAQ]
+  A --> AF[Section 6. ContactUs]
+
+```
+
+## 📂 Deployment
+
+To deploy this project, you need to perform the following steps:
+
+1. **Clone the repository**: Use the `git clone` command to clone this
+   repository to your computer.
+2. **Install the dependencies**: Open a terminal in the root of the project and
+   run `npm install` or `yarn install` to install all required dependencies.
+3. **Setting environment variables**: Create a `.env` file in the root folder
+   and add the necessary environment variables that you need for the project
+   according to the `.env.example` file.
+4. **Run the application**: Run the `npm run dev` or `yarn dev` command to run
+   the project on the local server.
+5. **Deploy**: To deploy this project to a production server, use hosting
+   platforms such as Vercel, Netlify, or others.
