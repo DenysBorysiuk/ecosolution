@@ -1,6 +1,6 @@
 import Counter from '@/components/ui/Counter';
 
-const ElectricitySection = () => {
+export const Electricity = () => {
   return (
     <section
       className="section electricity relative flex flex-col items-center 
@@ -14,5 +14,3 @@ const ElectricitySection = () => {
     </section>
   );
 };
-
-export default ElectricitySection;

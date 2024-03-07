@@ -1,11 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+
 import Accordion from '@/components/ui/Accordion';
 import LinkButton from '@/components/ui/LinkButton';
+
 import data from '@/data/accordion.json';
 
-const FaqSection = () => {
+export const Faq = () => {
   const [current, setCurrent] = useState(0);
 
   return (
@@ -41,5 +43,3 @@ const FaqSection = () => {
     </section>
   );
 };
-
-export default FaqSection;

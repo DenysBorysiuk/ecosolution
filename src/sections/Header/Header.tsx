@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import Logo from '@/components/ui/Logo';
-import BurgerMenu from '@/components/ui/BurgerMenu';
+import BurgerMenu from '@/components/BurgerMenu';
 import LinkButton from '@/components/ui/LinkButton';
 
-const Header = () => {
+export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -36,5 +36,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

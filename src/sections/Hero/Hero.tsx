@@ -4,7 +4,7 @@ import Arrow from 'public/icons/arrow-md.svg';
 import Address from '@/components/ui/Address';
 import { smoothScroll } from '@/utils/smoothScroll';
 
-const MainSection = () => {
+export const Hero = () => {
   return (
     <section
       className="main-bg pb-[236px] pt-[220px]  md:pb-[388px] md:pt-[240px]
@@ -42,5 +42,3 @@ const MainSection = () => {
     </section>
   );
 };
-
-export default MainSection;

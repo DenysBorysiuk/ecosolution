@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useMediaQuery } from 'react-responsive';
+
 import CasesCard from '@/components/ui/CasesCard';
 import Arrow from 'public/icons/arrow-xxl.svg';
 import 'swiper/swiper-bundle.css';
 import data from '@/data/cases.json';
 
-const CasesSection = () => {
+export const Cases = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
   const slides = isMobile ? 1 : 2;
@@ -71,4 +72,3 @@ const CasesSection = () => {
   );
 };
 
-export default CasesSection;

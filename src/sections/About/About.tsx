@@ -6,7 +6,7 @@ import Ranking from 'public/icons/ranking.svg';
 import AboutCard from '@/components/ui/AboutCard';
 import data from '@/data/about.json';
 
-const AboutSection = () => {
+export const About = () => {
   return (
     <section
       className="section pt-[36px] md:pt-[100px] xl:pt-[120px]"
@@ -69,5 +69,3 @@ const AboutSection = () => {
     </section>
   );
 };
-
-export default AboutSection;
