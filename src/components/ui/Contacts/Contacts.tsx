@@ -1,4 +1,4 @@
-import { SocialIcons } from '@/components/ui';
+import { Socials } from '@/components/ui';
 
 import Call from 'public/icons/call.svg';
 import Sms from 'public/icons/sms.svg';
@@ -66,9 +66,9 @@ export const Contacts = () => {
       <li>
         <p className="mb-[8px] text-[16px] xl:mb-[16px]">Social Networks:</p>
 
-        <SocialIcons
-          color={'primary'}
-          className={'h-[32px] w-[32px] gap-[8px] md:gap-[12px]'}
+        <Socials
+          color='primary'
+          className='h-[32px] w-[32px] gap-[8px] md:gap-[12px]'
         />
       </li>
     </ul>

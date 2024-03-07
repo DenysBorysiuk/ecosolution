@@ -1,6 +1,16 @@
 {
-  "heading": "Main values of our company",
-  "paragraph": "EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.",
+  "title": "Main values of our company",
+  "text": "EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.",
+  "images": [
+    {
+      "path": "/images/values/values-1_lg@2.webp",
+      "alt": "wind-farms-fields"
+    },
+    {
+      "path": "/images/values/values-2_lg@2.webp",
+      "alt": "man-worker-field-by-solar-panels"
+    }
+  ],
   "cards": [
     {
       "title": "Openness",

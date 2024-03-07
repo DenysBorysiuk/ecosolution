@@ -14,6 +14,7 @@ import 'swiper/swiper-bundle.css';
 import data from '@/data/cases.json';
 
 export const Cases = () => {
+  const { title, cards } = data;
   const [currentSlide, setCurrentSlide] = useState(0);
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
   const slides = isMobile ? 1 : 2;
@@ -21,16 +22,14 @@ export const Cases = () => {
   return (
     <section className="section" id="cases">
       <div className="line relative mb-[24px] md:mb-[36px] md:flex ">
-        <h2
-          className="heading2 w-[320px] md:mr-[100px] md:w-[264px] xl:mr-[383px] 
-          xl:w-[396px] smOnly:mb-[24px]"
-        >
-          Successful cases of our company
+        <h2 className="heading2 w-[320px] md:mr-[100px] md:w-[264px] xl:mr-[383px] xl:w-[396px] smOnly:mb-[24px]">
+          {title}
         </h2>
 
         <div className="flex grow items-end justify-between">
           <div>
             <span className="text-[28px] font-light">0{currentSlide + 1}</span>
+
             <span className="text-[28px] font-light text-primary/25">/05</span>
           </div>
 
@@ -68,7 +67,7 @@ export const Cases = () => {
         slidesPerView={slides}
         onSlideChange={swiper => setCurrentSlide(swiper.realIndex)}
       >
-        {data.cards.map(({ title, img, text, date }) => (
+        {cards.map(({ title, img, text, date }) => (
           <SwiperSlide key={title}>
             <CasesCard img={img} title={title} text={text} date={date} />
           </SwiperSlide>

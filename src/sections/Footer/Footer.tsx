@@ -1,4 +1,4 @@
-import { Logo, SocialIcons, Address, ButtonUp } from '@/components/ui';
+import { Logo, Socials, Address, ButtonUp } from '@/components/ui';
 
 export const Footer = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer = () => {
 
         <ButtonUp />
 
-        <SocialIcons className="flex justify-center gap-[8px] md:order-2  md:mr-auto smOnly:w-full" />
+        <Socials className="flex justify-center gap-[8px] md:order-2  md:mr-auto smOnly:w-full" />
       </div>
 
       <Address />

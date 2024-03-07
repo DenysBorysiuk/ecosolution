@@ -1,0 +1,23 @@
+{
+  "navLinks": [
+    { "href": "#main", "key": "main", "title": "Main" },
+    { "href": "#about", "key": "about", "title": "About" },
+    { "href": "#cases", "key": "cases", "title": "Cases" },
+    { "href": "#faq", "key": "faq", "title": "FAQ" },
+    { "href": "#contacts", "key": "contacts", "title": "Contact Us" }
+  ],
+  "btnUpAriaLabel": "Top of page",
+
+  "socialLinks": [
+    {
+      "label": "facebook",
+      "path": "https://facebook.com",
+      "ariaLabel": "link to facebook"
+    },
+    {
+      "label": "instagram",
+      "path": "https://instagram.com",
+      "ariaLabel": "link to instagram"
+    }
+  ]
+}

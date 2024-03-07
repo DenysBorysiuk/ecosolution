@@ -9,4 +9,4 @@ export * from './Counter';
 export * from './LinkButton';
 export * from './Logo';
 export * from './Navigation';
-export * from './SocialIcons';
+export * from './Socials';

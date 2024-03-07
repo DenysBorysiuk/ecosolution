@@ -1,4 +1,10 @@
 {
+  "title": "Frequently asked questions",
+  "text": "Didn't find the answer to your question?",
+  "link": {
+    "path": "contacts",
+    "label": "Contact Us"
+  },
   "faqs": [
     {
       "question": "How do wind turbines and solar panels work together in a renewable energy system?",

@@ -125,7 +125,7 @@ export const ContactForm = () => {
         </label>
       </div>
 
-      <button className="anim btn group ml-auto w-[100px] " type="submit">
+      <button className="anim btn group ml-auto w-[100px]" type="submit">
         Send
         <span className="icon flex h-[32px] w-[32px] bg-accent text-primary">
           <Arrow />

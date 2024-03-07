@@ -2,23 +2,21 @@
 
 import { MouseEvent } from 'react';
 
-import { NAV_LINKS } from '@/constants';
+import data from '@/data/common.json';
 
 import { smoothScroll } from '@/utils/smoothScroll';
 
 import Arrow from 'public/icons/arrow-md.svg';
 
-type NavigationProps = {
-  onClose: () => void;
-  currentLink: string;
-  setCurrentLink: (link: string) => void;
-};
+import { NavigationProps } from './type';
 
 export const Navigation = ({
   onClose,
   currentLink,
   setCurrentLink,
 }: NavigationProps) => {
+  const { navLinks } = data;
+
   const onLinkClick = (e: MouseEvent, link: string) => {
     onClose();
     setCurrentLink(link);
@@ -28,22 +26,22 @@ export const Navigation = ({
   return (
     <nav>
       <ul className="mb-auto flex flex-col gap-[8px]">
-        {NAV_LINKS.map(link => (
-          <li key={link.key}>
+        {navLinks.map(({ key, href, title }) => (
+          <li key={key}>
             <a
-              onClick={e => onLinkClick(e, link.key)}
-              href={link.href}
+              onClick={e => onLinkClick(e, key)}
+              href={href}
               className={`
               ${
-                currentLink === link.key
+                currentLink === key
                   ? 'text-accent'
                   : 'text-white xl:text-white/25'
               }
               anim flex items-center gap-[8px]
                text-[24px] tracking-[-0.96px] xl:hover:text-white xl:focus:text-white`}
             >
-              {link.title}
-              <Arrow className=" rotate-[-45deg]" />
+              {title}
+              <Arrow className="rotate-[-45deg]" />
             </a>
           </li>
         ))}

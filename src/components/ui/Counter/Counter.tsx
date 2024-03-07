@@ -4,8 +4,12 @@ import { useState, useEffect } from 'react';
 
 import { formatNumber } from '@/utils/formatNumber';
 
+import data from '@/data/electricity.json';
+
 export const Counter = () => {
-  const [count, setCount] = useState(1134147814);
+  const { value, units } = data;
+
+  const [count, setCount] = useState(value);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -19,15 +23,12 @@ export const Counter = () => {
 
   return (
     <div className="flex items-center justify-center gap-[8px] md:gap-[24px]">
-      <p
-        className="w-[256px] font-oswald text-[48px] font-bold leading-none text-accent md:w-[533px]
-        md:text-[100px] xl:w-[874px] xl:text-[164px]"
-      >
+      <p className="w-[256px] font-oswald text-[48px] font-bold leading-none text-accent md:w-[533px] md:text-[100px] xl:w-[874px] xl:text-[164px]">
         {formattedNumber}
       </p>
 
       <span className="font-oswald text-[24px] leading-none md:text-[28px] xl:text-[48px] mdOnly:leading-[1.7]">
-        kWh
+        {units}
       </span>
     </div>
   );

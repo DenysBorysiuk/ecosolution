@@ -1,0 +1,13 @@
+{
+  "logoLink": {
+    "path": "/",
+    "ariaLabel": "Logo"
+  },
+
+  "link": {
+    "path": "contacts",
+    "label": "Get in touch"
+  },
+  "menuOpenBtnAriaLabel": "Menu",
+  "menuCloseBtnLabel": "close"
+}

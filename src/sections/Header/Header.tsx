@@ -5,7 +5,11 @@ import { useEffect, useState } from 'react';
 import { Logo, LinkButton } from '@/components/ui';
 import { BurgerMenu } from '@/components/base';
 
+import data from '@/data/header.json';
+
 export const Header = () => {
+  const { link } = data;
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -33,7 +37,7 @@ export const Header = () => {
 
         <BurgerMenu />
 
-        <LinkButton linkTo={'contacts'}>Get in touch</LinkButton>
+        <LinkButton linkTo={link.path}>{link.label}</LinkButton>
       </div>
     </header>
   );

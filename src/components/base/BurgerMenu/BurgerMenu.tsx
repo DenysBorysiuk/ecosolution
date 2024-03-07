@@ -2,12 +2,16 @@
 
 import { useEffect, useState, MouseEvent } from 'react';
 
-import { Navigation, SocialIcons } from '@/components/ui';
+import { Navigation, Socials } from '@/components/ui';
 
 import Menu from 'public/icons/menu.svg';
 import Close from 'public/icons/close.svg';
 
+import data from '@/data/header.json';
+
 export const BurgerMenu = () => {
+  const { menuOpenBtnAriaLabel, menuCloseBtnLabel } = data;
+
   const [isOpen, setIsOpen] = useState(false);
   const [currentLink, setCurrentLink] = useState('main');
 
@@ -42,16 +46,14 @@ export const BurgerMenu = () => {
   return (
     <div className="ml-auto">
       <button
-        className="anim flex h-[40px] w-[40px] items-center justify-center 
-        rounded-full  bg-[#DCEFD8] hover:bg-accent focus:bg-accent"
+        className="anim flex h-[40px] w-[40px] items-center justify-center rounded-full  bg-[#DCEFD8] hover:bg-accent focus:bg-accent"
         onClick={() => setIsOpen(true)}
-        aria-label="Menu"
+        aria-label={menuOpenBtnAriaLabel}
         type="button"
       >
         <Menu width={16} height={16} />
       </button>
 
-      {/* menu */}
       {isOpen && (
         <div
           className="fixed left-0 top-0 z-20 h-[100vh] w-[100vw]  bg-primary/25 px-[20px]
@@ -71,7 +73,7 @@ export const BurgerMenu = () => {
                 onClick={() => setIsOpen(false)}
               >
                 <Close />
-                close
+                {menuCloseBtnLabel}
               </button>
               <div className="mb-[24px] h-[1px] w-full bg-white" />
 
@@ -82,7 +84,7 @@ export const BurgerMenu = () => {
               />
             </div>
 
-            <SocialIcons color={'white'} className={'gap-[8px]'} />
+            <Socials color="white" className="gap-[8px]" />
           </div>
         </div>
       )}
