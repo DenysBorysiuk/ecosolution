@@ -1,9 +1,12 @@
 import Image from 'next/image';
+
 import Circle from 'public/icons/maximize-circle.svg';
 import Global from 'public/icons/global-edit.svg';
 import Cpu from 'public/icons/cpu.svg';
 import Ranking from 'public/icons/ranking.svg';
+
 import AboutCard from '@/components/ui/AboutCard';
+
 import data from '@/data/about.json';
 
 export const About = () => {
@@ -28,9 +31,11 @@ export const About = () => {
         <AboutCard title={data.cards[0].title} text={data.cards[0].text}>
           <Circle className="h-[16px] w-[16px] xl:h-[24px] xl:w-[24px]" />
         </AboutCard>
+
         <AboutCard title={data.cards[1].title} text={data.cards[1].text}>
           <Global className="h-[16px] w-[16px] xl:h-[24px] xl:w-[24px]" />
         </AboutCard>
+
         <li className="relative md:col-span-2 md:h-[197px] xl:h-[339px] smOnly:hidden ">
           <Image
             src="/images/values/values-1_lg@2.webp"
@@ -41,6 +46,7 @@ export const About = () => {
             className="object-cover object-center"
           />
         </li>
+
         <li className="relative md:col-span-2  md:row-start-2 md:h-[197px] xl:h-[339px]  smOnly:hidden">
           <Image
             src="/images/values/values-2_lg@2.webp"
@@ -51,6 +57,7 @@ export const About = () => {
             className="object-cover object-center"
           />
         </li>
+
         <AboutCard
           title={data.cards[2].title}
           text={data.cards[2].text}
@@ -58,6 +65,7 @@ export const About = () => {
         >
           <Cpu className="h-[16px] w-[16px] xl:h-[24px] xl:w-[24px]" />
         </AboutCard>
+
         <AboutCard
           title={data.cards[3].title}
           text={data.cards[3].text}

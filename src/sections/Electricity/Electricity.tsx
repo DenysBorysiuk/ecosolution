@@ -10,6 +10,7 @@ export const Electricity = () => {
         Electricity we produced <br />
         for all time
       </h2>
+
       <Counter />
     </section>
   );

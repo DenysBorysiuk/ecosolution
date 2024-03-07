@@ -16,6 +16,7 @@ export const Faq = () => {
         <h2 className="heading2  mb-auto md:w-[342px] smOnly:mb-[24px]">
           Frequently asked <br /> questions
         </h2>
+
         <div className="h-[100%] md:order-[-1] md:w-[342px] xl:w-[560px]">
           {data.faqs.map((faq, index) => (
             <Accordion
@@ -30,6 +31,7 @@ export const Faq = () => {
             </Accordion>
           ))}
         </div>
+
         <div className="md:w-[300px] xl:w-[400px]">
           <p
             className="mb-[12px] text-[18px] tracking-[-0.72px] xl:text-[24px] 
@@ -37,6 +39,7 @@ export const Faq = () => {
           >
             Didn't find the answer to your question?
           </p>
+
           <LinkButton linkTo={'contacts'}>Contact Us</LinkButton>
         </div>
       </div>

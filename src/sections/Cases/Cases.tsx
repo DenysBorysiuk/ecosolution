@@ -6,8 +6,11 @@ import { Navigation } from 'swiper/modules';
 import { useMediaQuery } from 'react-responsive';
 
 import CasesCard from '@/components/ui/CasesCard';
+
 import Arrow from 'public/icons/arrow-xxl.svg';
+
 import 'swiper/swiper-bundle.css';
+
 import data from '@/data/cases.json';
 
 export const Cases = () => {
@@ -24,11 +27,13 @@ export const Cases = () => {
         >
           Successful cases of our company
         </h2>
+
         <div className="flex grow items-end justify-between">
           <div>
             <span className="text-[28px] font-light">0{currentSlide + 1}</span>
             <span className="text-[28px] font-light text-primary/25">/05</span>
           </div>
+
           <div className="flex gap-[12px] xl:gap-[24px]">
             <button
               className="button-prev icon anim h-[66px] w-[66px] border border-primary
@@ -38,6 +43,7 @@ export const Cases = () => {
             >
               <Arrow />
             </button>
+
             <button
               className="button-next icon anim h-[66px] w-[66px] rotate-180 border
                border-primary hover:border-accent hover:text-accent
@@ -71,4 +77,3 @@ export const Cases = () => {
     </section>
   );
 };
-
