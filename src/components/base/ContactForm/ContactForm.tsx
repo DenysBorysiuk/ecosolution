@@ -2,11 +2,13 @@
 
 import { useFormik } from 'formik';
 import toast from 'react-hot-toast';
+
 import Arrow from 'public/icons/arrow-md.svg';
+
 import { Values } from './type';
 import { schema } from './schema';
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -37,6 +39,7 @@ const ContactForm = () => {
           <span className="mb-[8px] block text-[16px] xl:mb-[12px]">
             &#42; Full name
           </span>
+
           <input
             className={`w-full border-b  bg-form_bg pb-[8px] text-[18px] 
             tracking-[-0.72px] outline-none xl:text-[20px]
@@ -60,6 +63,7 @@ const ContactForm = () => {
           <span className="mb-[8px] block text-[16px] leading-[1.2] xl:mb-[12px]">
             &#42; Email
           </span>
+
           <input
             className={`w-full border-b  bg-form_bg pb-[8px] 
              text-[18px] tracking-[-0.72px] outline-none xl:text-[20px]
@@ -85,6 +89,7 @@ const ContactForm = () => {
           <span className="mb-[8px] block text-[16px] xl:mb-[12px]">
             &#42; Phone
           </span>
+
           <input
             className={`block w-full border-b  bg-form_bg pb-[8px] text-[18px]
             tracking-[-0.72px] outline-none xl:text-[20px]
@@ -129,5 +134,3 @@ const ContactForm = () => {
     </form>
   );
 };
-
-export default ContactForm;

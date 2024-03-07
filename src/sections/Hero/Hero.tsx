@@ -1,8 +1,10 @@
 'use client';
 
-import Arrow from 'public/icons/arrow-md.svg';
-import Address from '@/components/ui/Address';
 import { smoothScroll } from '@/utils/smoothScroll';
+
+import { Address } from '@/components/ui';
+
+import Arrow from 'public/icons/arrow-md.svg';
 
 export const Hero = () => {
   return (

@@ -1,9 +1,10 @@
 'use client';
 
-import { formatNumber } from '@/utils/formatNumber';
 import { useState, useEffect } from 'react';
 
-const Counter = () => {
+import { formatNumber } from '@/utils/formatNumber';
+
+export const Counter = () => {
   const [count, setCount] = useState(1134147814);
 
   useEffect(() => {
@@ -24,11 +25,10 @@ const Counter = () => {
       >
         {formattedNumber}
       </p>
+
       <span className="font-oswald text-[24px] leading-none md:text-[28px] xl:text-[48px] mdOnly:leading-[1.7]">
         kWh
       </span>
     </div>
   );
 };
-
-export default Counter;

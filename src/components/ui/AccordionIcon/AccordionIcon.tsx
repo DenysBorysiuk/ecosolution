@@ -1,6 +1,6 @@
 import { AccordionIconProps } from './type';
 
-const AccordionIcon = ({ accordionOpen }: AccordionIconProps) => {
+export const AccordionIcon = ({ accordionOpen }: AccordionIconProps) => {
   return (
     <svg
       className={`mr-[8px] shrink-0  ${
@@ -32,4 +32,3 @@ const AccordionIcon = ({ accordionOpen }: AccordionIconProps) => {
   );
 };
 
-export default AccordionIcon;

@@ -5,7 +5,7 @@ import Global from 'public/icons/global-edit.svg';
 import Cpu from 'public/icons/cpu.svg';
 import Ranking from 'public/icons/ranking.svg';
 
-import AboutCard from '@/components/ui/AboutCard';
+import { AboutCard } from '@/components/ui';
 
 import data from '@/data/about.json';
 
@@ -19,6 +19,7 @@ export const About = () => {
         <h2 className="heading2 md:mr-auto md:w-[272px] xl:w-[365px] smOnly:mb-[24px]">
           {data.heading}
         </h2>
+
         <p className="text-justify text-[16px] md:w-[342px] xl:w-[459px]">
           {data.paragraph}
         </p>

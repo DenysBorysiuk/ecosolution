@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useState, MouseEvent } from 'react';
-import Navigation from '@/components/ui/Navigation';
+
+import { Navigation, SocialIcons } from '@/components/ui';
+
 import Menu from 'public/icons/menu.svg';
 import Close from 'public/icons/close.svg';
-import SocialIcons from '@/components/ui/SocialIcons';
 
-const BurgerMenu = () => {
+export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentLink, setCurrentLink] = useState('main');
 
@@ -80,6 +81,7 @@ const BurgerMenu = () => {
                 setCurrentLink={setCurrentLink}
               />
             </div>
+
             <SocialIcons color={'white'} className={'gap-[8px]'} />
           </div>
         </div>
@@ -87,5 +89,3 @@ const BurgerMenu = () => {
     </div>
   );
 };
-
-export default BurgerMenu;

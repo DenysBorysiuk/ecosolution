@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
-import Logo from '@/components/ui/Logo';
-import BurgerMenu from '@/components/BurgerMenu';
-import LinkButton from '@/components/ui/LinkButton';
+import { Logo, LinkButton } from '@/components/ui';
+import { BurgerMenu } from '@/components/base';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);

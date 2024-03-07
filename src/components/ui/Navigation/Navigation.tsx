@@ -1,8 +1,11 @@
 'use client';
 
 import { MouseEvent } from 'react';
+
 import { NAV_LINKS } from '@/constants';
+
 import { smoothScroll } from '@/utils/smoothScroll';
+
 import Arrow from 'public/icons/arrow-md.svg';
 
 type NavigationProps = {
@@ -11,7 +14,7 @@ type NavigationProps = {
   setCurrentLink: (link: string) => void;
 };
 
-const Navigation = ({
+export const Navigation = ({
   onClose,
   currentLink,
   setCurrentLink,
@@ -48,11 +51,3 @@ const Navigation = ({
     </nav>
   );
 };
-
-export default Navigation;
-
-// <li onClick={onClick} className={navlinkClasses}>
-//   <a href={href} onClick={e => smoothScroll(e, href)} aria-label={title}>
-//     {title}
-//   </a>
-// </li>;

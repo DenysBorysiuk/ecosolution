@@ -1,6 +1,11 @@
 import { AboutCardProps } from './type';
 
-const AboutCard = ({ children, title, text, className }: AboutCardProps) => {
+export const AboutCard = ({
+  children,
+  title,
+  text,
+  className,
+}: AboutCardProps) => {
   return (
     <li className={`card ${className}`}>
       <h3 className="heading3 flex items-center gap-[8px]">
@@ -17,5 +22,3 @@ const AboutCard = ({ children, title, text, className }: AboutCardProps) => {
     </li>
   );
 };
-
-export default AboutCard;

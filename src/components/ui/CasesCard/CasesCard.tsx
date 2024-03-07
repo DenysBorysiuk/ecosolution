@@ -1,10 +1,12 @@
 'use client';
 
 import Image from 'next/image';
+
 import Arrow from 'public/icons/arrow-xl.svg';
+
 import { CasesCardProps } from './type';
 
-const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
+export const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
   return (
     <div className="h-[318px] md:h-[322px] md:w-[342px] xl:h-[506px] xl:w-[596px] ">
       <div className="relative h-[168px]  xl:h-[296px]">
@@ -16,6 +18,7 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
           quality={90}
         />
       </div>
+      
       <div className="bg-form_bg px-[12px] pb-[12px] pt-[24px] xl:px-[48px] xl:py-[36px]">
         <div className="mb-[24px] flex justify-between md:mb-[22px] xl:mb-[36px]">
           <p
@@ -24,6 +27,7 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
           >
             {title}
           </p>
+
           <a
             href="#"
             aria-label={`Read more about ${title}`}
@@ -33,8 +37,10 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
             <Arrow />
           </a>
         </div>
+
         <div className="flex justify-between border-t border-accent pt-[12px] xl:pt-[24px]">
           <p className="text-[12px] md:text-[14px]">{text}</p>
+
           <p className="text-[12px] md:text-[14px]">{date}</p>
         </div>
       </div>
@@ -42,4 +48,3 @@ const CasesCard = ({ img, title, text, date }: CasesCardProps) => {
   );
 };
 
-export default CasesCard;

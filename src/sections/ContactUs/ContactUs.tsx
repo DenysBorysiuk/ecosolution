@@ -1,5 +1,5 @@
-import Contacts from '@/components/ui/Contacts';
-import ContactForm from '@/components/ContactForm';
+import { Contacts } from '@/components/ui';
+import { ContactForm } from '@/components/base';
 
 export const ContactUs = () => {
   return (
@@ -10,7 +10,7 @@ export const ContactUs = () => {
 
       <div className="md:flex md:justify-between">
         <Contacts />
-        
+
         <ContactForm />
       </div>
     </section>

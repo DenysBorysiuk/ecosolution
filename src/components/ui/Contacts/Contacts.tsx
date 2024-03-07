@@ -1,13 +1,15 @@
-import SocialIcons from '@/components/ui/SocialIcons';
+import { SocialIcons } from '@/components/ui';
+
 import Call from 'public/icons/call.svg';
 import Sms from 'public/icons/sms.svg';
 import Map from 'public/icons/map.svg';
 
-const Contacts = () => {
+export const Contacts = () => {
   return (
     <ul className="flex flex-col gap-[24px] md:w-[244px] xl:w-[466px] xl:gap-[32px] smOnly:mb-[24px]">
       <li>
         <p className="mb-[8px] text-[16px] xl:mb-[16px]">Phone:</p>
+
         <a
           className="group mb-[8px] flex items-center gap-[8px] text-[20px] tracking-[-0.8px] 
           xl:mb-[16px] xl:text-[24px] xl:tracking-[-0.96px]"
@@ -19,6 +21,7 @@ const Contacts = () => {
           />
           38 (098) 12 34 567
         </a>
+
         <a
           className="group flex items-center gap-[8px] text-[20px] tracking-[-0.8px]  xl:text-[24px] 
           xl:tracking-[-0.96px]"
@@ -31,8 +34,10 @@ const Contacts = () => {
           38 (093) 12 34 567
         </a>
       </li>
+
       <li>
         <p className="mb-[8px] text-[16px] xl:mb-[16px]">E-mail:</p>
+
         <a
           className="group flex items-center gap-[8px] text-[20px] tracking-[-0.8px] 
           xl:text-[24px] xl:tracking-[-0.96px]"
@@ -45,8 +50,10 @@ const Contacts = () => {
           office@ecosolution.com
         </a>
       </li>
+
       <li>
         <p className="mb-[8px] text-[16px] xl:mb-[16px]">Address:</p>
+
         <p
           className="flex items-center gap-[8px] text-[20px] tracking-[-0.8px] xl:text-[24px]
          xl:tracking-[-0.96px]"
@@ -55,8 +62,10 @@ const Contacts = () => {
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </p>
       </li>
+
       <li>
         <p className="mb-[8px] text-[16px] xl:mb-[16px]">Social Networks:</p>
+
         <SocialIcons
           color={'primary'}
           className={'h-[32px] w-[32px] gap-[8px] md:gap-[12px]'}
@@ -65,5 +74,3 @@ const Contacts = () => {
     </ul>
   );
 };
-
-export default Contacts;

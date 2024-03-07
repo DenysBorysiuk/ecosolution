@@ -1,8 +1,10 @@
 import Link from 'next/link';
+
 import LogoIcon from 'public/icons/logo.svg';
+
 import { LogoProps } from './type';
 
-const Logo = ({ className }: LogoProps) => {
+export const Logo = ({ className }: LogoProps) => {
   return (
     <Link
       href="/"
@@ -14,5 +16,3 @@ const Logo = ({ className }: LogoProps) => {
     </Link>
   );
 };
-
-export default Logo;

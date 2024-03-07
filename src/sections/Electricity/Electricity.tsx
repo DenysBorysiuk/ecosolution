@@ -1,4 +1,4 @@
-import Counter from '@/components/ui/Counter';
+import { Counter } from '@/components/ui';
 
 export const Electricity = () => {
   return (

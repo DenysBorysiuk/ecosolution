@@ -1,1 +1,1 @@
-export { default } from './ButtonUp';
+export * from './ButtonUp';

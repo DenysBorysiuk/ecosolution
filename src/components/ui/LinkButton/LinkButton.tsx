@@ -1,8 +1,10 @@
 import { smoothScroll } from '@/utils/smoothScroll';
+
 import ArrowIcon from 'public/icons/arrow-sm.svg';
+
 import { LinkButtonProps } from './type';
 
-const LinkButton = ({ children, linkTo }: LinkButtonProps) => {
+export const LinkButton = ({ children, linkTo }: LinkButtonProps) => {
   return (
     <a
       href="#"
@@ -19,5 +21,3 @@ const LinkButton = ({ children, linkTo }: LinkButtonProps) => {
     </a>
   );
 };
-
-export default LinkButton;

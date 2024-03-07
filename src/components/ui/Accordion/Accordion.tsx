@@ -1,16 +1,17 @@
 'use client';
 
-import AccordionIcon from '@/components/ui/AccordionIcon';
+import { AccordionIcon } from '@/components/ui';
+
 import { AccordionProps } from './type';
 
-export default function Accordion({
+export const Accordion = ({
   children,
   question,
   id,
   accordionOpen,
   setCurrent,
   index,
-}: AccordionProps) {
+}: AccordionProps) => {
   return (
     <div className="border-t border-accent">
       <p>
@@ -45,4 +46,4 @@ export default function Accordion({
       </div>
     </div>
   );
-}
+};

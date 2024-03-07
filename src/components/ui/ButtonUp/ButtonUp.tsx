@@ -1,9 +1,10 @@
 'use client';
 
 import { smoothScroll } from '@/utils/smoothScroll';
+
 import Arrow from 'public/icons/arrow-md.svg';
 
-const ButtonUp = () => {
+export const ButtonUp = () => {
   return (
     <a
       href="#"
@@ -17,5 +18,3 @@ const ButtonUp = () => {
     </a>
   );
 };
-
-export default ButtonUp;

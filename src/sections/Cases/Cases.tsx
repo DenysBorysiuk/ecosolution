@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useMediaQuery } from 'react-responsive';
 
-import CasesCard from '@/components/ui/CasesCard';
+import { CasesCard } from '@/components/ui';
 
 import Arrow from 'public/icons/arrow-xxl.svg';
 

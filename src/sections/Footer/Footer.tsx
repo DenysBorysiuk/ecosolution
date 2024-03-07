@@ -1,7 +1,4 @@
-import Logo from '@/components/ui/Logo/Logo';
-import SocialIcons from '@/components/ui/SocialIcons';
-import Address from '@/components/ui/Address';
-import ButtonUp from '@/components/ui/ButtonUp/ButtonUp';
+import { Logo, SocialIcons, Address, ButtonUp } from '@/components/ui';
 
 export const Footer = () => {
   return (

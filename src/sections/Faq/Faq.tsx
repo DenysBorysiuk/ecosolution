@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 
-import Accordion from '@/components/ui/Accordion';
-import LinkButton from '@/components/ui/LinkButton';
+import { Accordion, LinkButton } from '@/components/ui';
 
 import data from '@/data/accordion.json';
 

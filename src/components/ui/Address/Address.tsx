@@ -1,7 +1,8 @@
 import Link from 'next/link';
+
 import { AddressProps } from './type';
 
-const Address = ({ className }: AddressProps) => {
+export const Address = ({ className }: AddressProps) => {
   return (
     <div className="flex items-center smOnly:flex-col smOnly:gap-[8px]">
       <address className="not-italic md:mr-auto">
@@ -16,5 +17,3 @@ const Address = ({ className }: AddressProps) => {
     </div>
   );
 };
-
-export default Address;
