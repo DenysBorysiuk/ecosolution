@@ -3,6 +3,8 @@
 import { useFormik } from 'formik';
 import toast from 'react-hot-toast';
 
+import { sendEmail } from '@/utils/sendEmail';
+
 import Arrow from 'public/icons/arrow-md.svg';
 
 import { Values } from './type';
@@ -19,10 +21,14 @@ export const ContactForm = () => {
 
     validationSchema: schema,
 
-    onSubmit: (values: Values, { resetForm }) => {
-      toast.success('Successfully sent!');
+    onSubmit: async (values: Values, { resetForm }) => {
       localStorage.setItem('formData', JSON.stringify(values));
+
+      await sendEmail(values);
+
       resetForm();
+
+      toast.success('Successfully sent!');
     },
   });
 
