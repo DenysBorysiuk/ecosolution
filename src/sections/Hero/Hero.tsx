@@ -25,6 +25,7 @@ export const Hero = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
+
           <a
             href="#"
             className="btn anim w-[141px] smOnly:mx-auto"

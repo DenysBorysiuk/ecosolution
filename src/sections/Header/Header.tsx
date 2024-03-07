@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+
 import Logo from '@/components/ui/Logo';
 import BurgerMenu from '@/components/BurgerMenu';
 import LinkButton from '@/components/ui/LinkButton';
@@ -30,7 +31,9 @@ export const Header = () => {
     >
       <div className="container flex items-center py-[36px] xl:max-w-screen-xl xl:py-[24px]">
         <Logo />
+
         <BurgerMenu />
+
         <LinkButton linkTo={'contacts'}>Get in touch</LinkButton>
       </div>
     </header>

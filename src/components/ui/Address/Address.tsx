@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { AddressProps } from './type';
 
-const Address = () => {
+const Address = ({ className }: AddressProps) => {
   return (
     <div className="flex items-center smOnly:flex-col smOnly:gap-[8px]">
       <address className="not-italic md:mr-auto">
@@ -9,7 +10,7 @@ const Address = () => {
 
       <Link href="mailto:office@ecosolution.com">office@ecosolution.com</Link>
 
-      <p className="md:ml-[50px] md:flex xl:ml-[167px]">
+      <p className={`${className} md:ml-[50px] md:flex xl:ml-[167px]`}>
         ecosolution &copy; 2023
       </p>
     </div>
