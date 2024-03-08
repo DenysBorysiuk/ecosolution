@@ -44,8 +44,8 @@ graph LR
   L ---> B(Header)
   L ---> A((Home page))
   L ---> C(Footer)
-  A --> AA[Section 1. Main]
-  A --> AB[Section 2. Values]
+  A --> AA[Section 1. Hero]
+  A --> AB[Section 2. About]
   A --> AC[Section 3. Electricity]
   A --> AD[Section 4. Cases]
   A --> AE[Section 5. FAQ]
