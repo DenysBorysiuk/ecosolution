@@ -6,7 +6,7 @@
 
 ![Site image](./public/images/og-image.jpg)
 
-## 🗂️ Project description 🗂️
+## 🗂️ Project description
 
 ### Goals
 
@@ -53,7 +53,7 @@ graph LR
 
 ```
 
-## 📂 Deployment
+## ⚙️ Deployment
 
 To deploy this project, you need to perform the following steps:
 
