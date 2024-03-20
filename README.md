@@ -19,7 +19,7 @@ specifications.
 - TypeScript
 - Tailwind
 
-### Acceptance Criteria
+### Features
 
 - The layout is fixed in pixels.
 - Semantic and valid markup; accessibility (a11y) is a bonus.
