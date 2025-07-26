@@ -15,8 +15,8 @@ specifications.
 
 ### Used Technologies:
 
-- React.js
 - Next.js
+- React.js
 - TypeScript
 - Tailwind
 
